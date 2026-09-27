@@ -1,0 +1,951 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="es-co">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<title>Simuproc - Instrucciones Soportadas</title>
+</head>
+
+<body bgcolor="black" text="#FFFFFF" link="#80FF80" vlink="#A0FF40" alink="#FFFFFF">
+
+<span class=text>
+<center><table width=90% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+    </span><span class=head><font size="5">Instrucciones Soportadas por SimuProc</font></span><span class=text><font size="5"><br>
+    </font>
+</span>
+</td>
+</tr></table><table width=90% cellpadding=0 cellspacing=0 border=0 bgcolor=#003000><tr><td valign=top>
+<p>
+<br>Con las instrucciones
+que soporta este simulador se pueden escribir una gran cantidad de programas
+para resolver muchos problemas diferentes.
+<p>Las describir&eacute;
+as&iacute;:
+<br><table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=text><b>XX - INST [parámetro]</b></span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+Donde:
+<br>XX significa el
+C&oacute;digo de la Instrucción
+<br>INST es la
+instrucci&oacute;n
+<br>[parámetro] es el par&aacute;metro
+si esta tiene o [parametro1,parametro2] si el par&aacute;metro es doble
+    </td><td valign=top>
+Acá pondré algunos ejemplos
+<br>
+    </td></tr></table>
+<p>Estas son las instrucciones
+soportadas por la versi&oacute;n actual:
+<br><table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note>
+<b>01 - LDA [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Cargue en AX el
+contenido de la direcci&oacute;n de Memoria especificada.&nbsp;</span>
+    </td><td valign=top>
+<span class=note>
+&nbsp;Digamos que en la posici&oacute;n
+de memoria 1F esta el valor 10111, despu&eacute;s de ejecutada la instrucci&oacute;n
+LDA 1F se obtiene que AX=10111
+<br>Es equivalente a usar la instrucción MOV AX,1F
+<br><span lang="en-us">Hay casos donde es mejor u</span>sar MOV<span lang="en-us"> 
+si se desea pasar datos sin tener que pasarlos por AX</span>.</span>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note>
+<b>02 - STA [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Guarde el contenido
+de AX en la direcci&oacute;n de Memoria especificada.
+      </span>
+    </td><td valign=top>
+<span class=note>&nbsp;Supongamos que tengo el valor
+1010110 en el registro AX y quiero llevarlo a la posici&oacute;n de&nbsp; memoria
+3C, la instrucci&oacute;n es STA 3C
+<br>Es equivalente a usar la instrucción MOV 3C,AX
+<br>Es mejor usar MOV debido a que si quiero pasar algún dato
+de una dirección de memoria a otra usando LDA y STA serian dos instrucciones:
+LDA mem1 y luego STA mem2, mientras que con MOV será así: MOV mem2,mem1</span>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note>
+<b>03 - XAB</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Intercambia los
+valores de los registros AX y BX
+      </span>
+    </td><td valign=top>
+<span class=note>Esta instrucci&oacute;n no necesita par&aacute;metros.
+      </span>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note>
+<b>04 - CLA</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Hace AX = 0
+      </span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note>
+<b>06 - PUSH [registro]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Env&iacute;a el
+valor del registro especificado a la pila
+      </span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note>
+<b>07 - POP [registro]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Trae de la Pila
+el ultimo Valor llevado por PUSH (indicado por el registro SP) y lo almacena en el registro especificado.
+      </span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p><b>Nota</b>: En todas las instrucciones desde 08 hasta la 18, Dest puede ser
+una dirección de Memoria o un Registro
+<br><table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note>
+<b>08 - INC [dest]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Incrementa en 1
+el destino especificado, el par&aacute;metro puede ser una direcci&oacute;n
+de memoria o un registro.
+      </span>
+    </td><td valign=top>
+<span class=note>&nbsp;Si en la posici&oacute;n de memoria
+EB esta el valor 1001, al ejecutar INC EB se obtiene que ahora el valor de
+EB es 1010.
+      </span>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note>
+<b>09 - DEC [dest]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Decremento en 1
+el destino especificado,&nbsp; Si el destino queda = 0, se vuelve Z = 1</span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>10 - MOV [dest,orig]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Copia el valor almacenado
+en el origen al destino.&nbsp; El destino y/o origen pueden ser registros
+o direcciones de memoria o combinaci&oacute;n de estos.
+      </span>
+    </td><td valign=top>
+<span class=note>&nbsp;Para
+copiar lo que esta en la posici&oacute;n de memoria 12E a la posici&oacute;n
+D2 se usa la instrucci&oacute;n MOV D2,12E
+      </span>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>11 - AND [dest,orig]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Y lógico, hace un Y lógico entre <span lang="en-us">todos los bits de los </span>dos operándos escribiendo el resultado
+en el destino. Los par&aacute;metros pueden ser direcciones de memoria o Registros.<span lang="en-us"> 
+La siguiente regla aplica:</span></span><span class=text><span class=note>
+<br>
+      </span>
+</span>
+<span class=note>
+1 AND 1 = 1<br>
+1 AND 0 = 0<br>
+0 AND 1 = 0<br>
+0 AND 0 = 0</span></td><td valign=top>
+<span class=note>&nbsp;Si en AX tengo el numero 1001101 y en la pos 3F tengo el numero 11011.
+al ejecutar la instrucci&oacute;n AND AX,3F obtendr&eacute; en AX el resultado
+1001.
+<br>El Y l&oacute;gico
+lo que hace es dejar los bits en com&uacute;n que tengan los dos n&uacute;meros.
+      </span>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>12 - NOT [destino]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>NO l&oacute;gico,
+invierte los bits del operando formando el complemento del primero.&nbsp;
+<span class=text>
+&nbsp;<br><span lang="en-us">N</span>O<span lang="en-us">T</span> 1 = 0<br>
+<span lang="en-us">N</span>O<span lang="en-us">T</span> 0 = 1</span></span></td><td valign=top>
+<span class=note>&nbsp;Si en AX tengo 10011 al ejecutar NOT AX obtengo AX=1111111111101100</span>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>13 - OR [dest,orig]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+O inclusive l&oacute;gico,
+todo bit activo en cualquiera de los operándoos ser&aacute; activado en
+el destino.
+      </span>
+<span class=text>
+<span class=note>
+<span lang="en-us">&nbsp;La siguiente regla aplica:</span>
+<br>
+      </span>
+</span>
+<span class=note>
+1 OR 1 = 1<br>
+1 OR 0 = 1<br>
+0 OR 1 = 1<br>
+0 OR 0 = 0</span></td><td valign=top>
+<span class=note>&nbsp;Si en 3A tengo el numero 1001101 y en la pos 3B tengo el numero 11011.
+al ejecutar la instrucci&oacute;n OR 3A,3B obtendr&eacute; en 3A el resultado 1011111.
+      </span>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>14 - XOR [dest,orig]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>O exclusivo, realiza
+un O exclusivo entre los operándoos y almacena el resultado en destino.</span><span class=text><span class=note>
+<span lang="en-us">&nbsp;La siguiente regla aplica:</span>
+<br>
+      </span>
+</span>
+<span class=note>1 XOR 1 = 0<br>
+1 XOR 0 = 1<br>
+0 XOR 1 = 1<br>
+0 XOR 0 = 0</span></td><td valign=top>
+<span class=note>&nbsp;Si en 3A tengo el numero 1001101 y en la pos 3B tengo el numero 11011.
+al ejecutar la instrucci&oacute;n XOR 3A,3B obtendr&eacute; en 3A el resultado 1010110.
+      </span>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>15 - ROL [dest,veces]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Rota los bits a
+la izquierda las veces especificadas(en decimal), los bits que salen por
+la izquierda re-entran por la Derecha. En el Carry Flag queda el ultimo
+bit rotado.
+      </span>
+    </td><td valign=top>
+<span class=note>
+&nbsp;Supongamos que en la posición 7E tengo el numero 101110
+      </span>
+<div align="center">
+  <table border="0" class="text" cellspacing="1">
+    <tr>
+      <td>
+<span class=note>
+Al Ejecutar...&nbsp;</span></td>
+      <td align="right">
+<span class=note>
+&nbsp;obtengo en 7E&nbsp;
+      </span>
+      </td>
+      <td align="right">&nbsp;C=</td>
+    </tr>
+    <tr>
+      <td>
+<span class=note>
+ROL 7E,2
+      </span>
+      </td>
+      <td align="right">10111000</td>
+      <td align="right">
+<span class=note>
+0
+      </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+<span class=note>
+ROL 7E,7</span></td>
+      <td align="right">1011100000000</td>
+      <td align="right">
+<span class=note>
+0
+      </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+<span class=note>
+ROL 7E,13</span></td>
+      <td align="right">1100000000000101</td>
+      <td align="right">
+<span class=note>
+1
+      </span>
+      </td>
+    </tr>
+  </table>
+</div>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>16 - ROR [dest,veces]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Rota los bits a
+la derecha las veces especificadas(en decimal), los Bits que salen por la derecha re-entran
+por la izquierda. El Carry Flag guarda el ultimo bit rotado.
+      </span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>17 - SHL [dest,veces]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Desplaza los bits
+a la izquierda el numero de veces especificado(en decimal), agregando ceros a la derecha,
+el Carry Flag guarda ultimo bit desplazado.
+      </span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>18 - SHR [dest,veces]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Desplaza los bits
+a la Derecha el numero de veces especificado(en decimal), agregando ceros a la izquierda,
+el Carry Flag guarda ultimo bit desplazado.
+      </span>
+    </td><td valign=top>
+<span class=note>
+&nbsp;Supongamos que en la posición 1A tengo el numero 101110
+      </span>
+<div align="center">
+  <table border="0" class="text" cellspacing="1">
+    <tr>
+      <td>
+<span class=note>
+Al Ejecutar...&nbsp;</span></td>
+      <td align="right">
+<span class=note>
+&nbsp;obtengo en 1A&nbsp;
+      </span>
+      </td>
+      <td align="right">&nbsp;C=</td>
+    </tr>
+    <tr>
+      <td>
+<span class=note>
+SHR 1A,2
+      </span>
+      </td>
+      <td align="right">1011</td>
+      <td align="right">
+<span class=note>
+1
+      </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+<span class=note>
+SHR 1A,6</span></td>
+      <td align="right">0</td>
+      <td align="right">
+<span class=note>
+1
+      </span>
+      </td>
+    </tr>
+    <tr>
+      <td><span class=note>SHR 1A,11</span></td>
+      <td align="right">0</td>
+      <td align="right">
+<span class=note>
+0
+      </span>
+      </td>
+    </tr>
+  </table>
+</div>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>20 - ADD [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Sumar:
+<br>AX = AX + el contenido
+de la direcci&oacute;n de memoria.</span>
+    </td><td valign=top>
+<span lang="en-us">&nbsp;</span><span class="text"><span class="note">Si
+<span lang="en-us">el </span>resultado <span lang="en-us">de la suma supera los 
+16 bits, el resultado queda asi: en BX los bits mas significativos y en BX los 
+menos, tambien se activa el Overflow flag.</span></span></span></td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000 height="16"><tr><td valign=top height="16">
+<span class=note><b>21 - SUB [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Restar:
+<br>AX = AX - el contenido
+de la direcci&oacute;n de memoria.</span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>22 - MUL [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Multiplicar:
+<br>AX = AX * el contenido
+de la direcci&oacute;n de memoria.&nbsp;
+<br>Si el numero resultante supera su longitud
+en binario de 16 bits,&nbsp; este resultado se parte almacenando los bits
+mas significativos en el Registro BX.&nbsp;</span>
+    </td><td valign=top>
+<span class=note>&nbsp;Si el resultado de una
+operaci&oacute;n <span lang="en-us">fuera</span> 101101000111100010111 (21 bits) Los registros quedar&iacute;an
+as&iacute;:
+<br>A = 1000111100010111&nbsp;&nbsp;&nbsp;
+(los &uacute;ltimos 16bits)
+<br>B = 10110&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(los primeros Bits<span lang="en-us"> (los mas significativos)</span>)
+<br>Tambi&eacute;n se
+activa el Flag Overflow, para indicar que en la ultima operaci&oacute;n
+sucedi&oacute; esto.
+      </span>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>23 - DIV [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Dividir:
+<br>AX = AX / el contenido
+de la direcci&oacute;n de memoria, BX=AX % el contenido de la dir de memoria (BX
+= modulo
+o residuo).</span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+
+<span class=text>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>2<span lang="en-us">4</span> - CL<span lang="en-us">N</span></b></span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Limpia el <span lang="en-us">Negative</span>
+Flag.&nbsp; <span lang="en-us">N</span> = 0
+      </span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;</span><table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>25 - CLC</b></span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Limpia el Carry
+Flag.&nbsp; C = 0
+      </span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>26 - STC&nbsp;</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Pone el Carry Flag.&nbsp;
+C = 1
+      </span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>27 - CMC</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Complementa (invierte)
+el Carry Flag.&nbsp; Si C = 1 vuelve C = 0 y viceversa.
+      </span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>29 - LOOP [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Decrementa CX y <span lang="en-us">salta</span> a la Pos de memoria si CX no es cero.
+      </span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>30 - JMP [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Salto incondicional.&nbsp;
+PC = direcci&oacute;n de memoria donde esta la siguiente instrucci&oacute;n
+a ejecutar&quot;
+      </span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>31 - JEQ [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Saltar si son iguales.
+<br>Si Z = 1, PC = contenido
+de la memoria.</span>
+    </td><td valign=top>
+<span class=text>
+<span class=note>
+<span lang="en-us">Función equivalente en C:</span><br><span lang="en-us">&nbsp;</span>if 
+(<span lang="en-us">AX</span> == <span lang="en-us">mem</span>)</span></span></td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>32 - CMP [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000 height="48"><tr>
+  <td valign=top height="48">
+<span class=note>
+Compara AX con [mem],
+si AX es mayor, Z=0 N=0, si es igual Z=1 N=0, si es menor Z=0 N=1&nbsp;
+      </span>
+    </td><td valign=top height="48">
+<span class=note>
+&nbsp;Supongamos que en AX tengo el numero 10110 y en la posición de memoria 4G
+tengo el numero 1100, al ejecutar la instrucción CMP 4G obtengo que como el
+numero almacenado en AX es mayor entonces los Flags de Control me quedan así:
+Z=0 y N=0</span>
+<span class=text>
+<span class=note>
+<br><span lang="en-us"><b>Nota</b>: Solo en las versiones 1.3.6.2 y anteriores&nbsp; En AX quedaba el resultado de la resta 
+(de la comparación), Ahora ya <b>no</b>. Sugerencia: 
+si necesita el valor original de AX puede usar la pila para almacenarlo 
+temporalmente.</span></span></span></td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>33 - JME [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Saltar si es Menor.&nbsp;
+<br>Si N = 1, PC = contenido
+de la memoria.&nbsp;</span>
+    </td><td valign=top>
+<span class=note>
+&nbsp;Supongamos que ejecuto esta instrucción así JME 3F inmediatamente después
+de ejecutar la instrucción del ejemplo que coloque en la instrucción 32, al
+ejecutar JME 3F se verifica el Flag N, y como en este caso se encuentra en 0
+(porque el numero no es menor) entonces no se realiza dicho Salto a 3F porque el
+valor de PC no se modifica, el programa sigue su ejecución.</span>
+<span class=text>
+<span class=note>
+<br><span lang="en-us">Función equivalente en C:</span><br><span lang="en-us">&nbsp;</span>if 
+(<span lang="en-us">AX</span> <span lang="en-us">&lt;</span> <span lang="en-us">mem</span>)<br>
+<span lang="en-us">y Si necesitas hacer un:</span><br><span lang="en-us">&nbsp;if 
+(AX &lt;= mem)</span><br><span lang="en-us">inmediatamente despues de la 
+instruccion JME colocas una JEQ</span></span></span></td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>34 - JMA [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Saltar si es Mayor.&nbsp;
+<br>Si Z = 0 y N = 0,
+PC = contenido de memoria.&nbsp;</span>
+    </td><td valign=top>
+<span class=note>&nbsp;Supongamos que ejecuto esta instrucción así JMA<span lang="en-us"> 
+2B</span>
+inmediatamente después de ejecutar la instrucción del ejemplo que coloque en
+la instrucción 32, al ejecutar JMA <span lang="en-us">2B</span> se verifican los Flag N y Z, y como en
+este caso los dos son 0 (porque el numero es menor) entonces <span lang="en-us">
+si </span>se realiza dicho
+Salto a <span lang="en-us">2B</span> ya que el valor de<span lang="en-us">l</span> PC<span lang="en-us">
+</span>se modifica, el programa sigue su ejecución<span lang="en-us"> saltando a 
+la dir de mem especificada</span>.</span>
+<span class=text>
+<span class=note>
+<br><span lang="en-us">Función equivalente en C:</span><br><span lang="en-us">&nbsp;</span>if 
+(<span lang="en-us">AX</span> <span lang="en-us">&gt;</span> <span lang="en-us">mem</span>)</span></span></td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>35 - JC [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Saltar <span lang="en-us">si </span>el Carry Flag esta activado.
+<br>Si C = 1, PC = contenido
+de memoria.</span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>36 - JNC [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Saltar si el Carry Flag no esta activado.
+<br>Si C = 0, PC = contenido
+de memoria</span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>37 - JO [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Saltar si el Overflow Flag esta Activado.
+<br>Si O = 1, PC = contenido
+de memoria</span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>38 - JNO [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Saltar si el Overflow Flag no esta activado.
+<br>Si O = 0, PC = contenido
+de memoria</span>
+    </td><td valign=top>
+&nbsp;
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>39 - JNE [mem]</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>
+Saltar si no son iguales.
+<br>Si Z = 0, PC = contenido
+de memoria.</span>
+    </td><td valign=top>
+&nbsp;<span class=text><span class=note><span lang="en-us">Función equivalente 
+en C:</span><br><span lang="en-us">&nbsp;</span>if (<span lang="en-us">AX</span>
+<span lang="en-us">!</span>= <span lang="en-us">mem</span>)</span></span></td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>40 - LDT</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Lee un valor del
+Teclado y lo lleva al registro AX
+      </span>
+    </td><td valign=top>
+<span class=note>&nbsp;Esta instrucción es para comunicarse con el usuario, pidiéndole
+que entre un Dato; Puede colocar una descripción del dato que pide, que se
+mostrará en tiempo de ejecución.</span>
+    </td></tr></table>
+<p>&nbsp;<span class=text><table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>41 - EAP</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Escribe en Pantalla
+el contenido del registro AX
+      </span>
+    </td><td valign=top>
+<span class=note>&nbsp;Esta instrucción también es para comunicarse con el
+usuario; Puede colocar una descripción del dato que se entrega, este se
+mostrará en tiempo de ejecución.</span>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>4<span lang="en-us">2</span> -<span lang="en-us"> MSG</span></b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note><span lang="en-us">Muestra un mensaje en pantalla</span>
+      </span>
+    </td><td valign=top>
+<span class=note>&nbsp;E<span lang="en-us">j: MSG &quot;Hola Mundo !!&quot;</span></span></td></tr></table>
+<p>&nbsp;</p>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b><span lang="en-us">50</span> -<span lang="en-us"> LDB [mem]</span></b>
+      </span>
+</td></tr></table>
+</span>
+</span>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>La instrucción carga en AX el contenido de memoria almacenado 
+en [mem] + BX<br>
+&nbsp;</span></td><td valign=top>
+<span class="note">ej: Digamos que BX=10 ; LDB 1<span lang="en-us">A</span> carga
+<span lang="en-us">el contenido de </span>1<span lang="en-us">C</span> en AX </span>
+    </td></tr></table>
+<span class=text>
+<p>&nbsp;</p>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b><span lang="en-us">5</span>1 - <span lang="en-us">STB [mem]</span></b>
+      </span>
+</td></tr></table>
+</span>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>guarda el contenido de AX en la<span lang="en-us"> </span>
+dirección [mem] + BX</span></td><td valign=top>
+ej: Digamos que BX=101 ; STB 3A guarda AX en 3F</td></tr></table>
+<span class=text>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b><span lang="en-us">55</span> - <span lang="en-us">LDF</span></b></span><span class=text><span class=note><b><span lang="en-us"> [mem]</span></b>
+      </span>
+</span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note><span lang="en-us">Carga en BX y AX un numero de 32 bits (IEEE) 
+que esta almacenado en la dir [mem] y mem+1.&nbsp;&nbsp;&nbsp;&nbsp; En BX 
+quedan los digitos mas Significativos</span></span></td><td valign=top>
+<span class=note>&nbsp;<span lang="en-us">Ej:Supongamos que el número 
+01000010110010001000000000000000 está cargado en memoria así:</span></span><span class=text><span class=note><br>
+0<span lang="en-us">2A&nbsp; </span>0100001011001000 (Los dígitos mas 
+significativos)<br>
+0<span lang="en-us">2B</span> <span lang="en-us">&nbsp;</span>1000000000000000 
+(Los dígitos menos significativos)<br>
+<br>
+Un LDF <span lang="en-us">2A</span> dejaría el siguiente resultado:<br>
+<br>
+BX: 0100001011001000<br>
+AX: 1000000000000000</span></span>
+<span class=text>
+<span class=note><br>
+<span lang="en-us">--------------------------</span><br>
+<span lang="en-us">Nota: Para pedirle al usuario o mostrar estos numeros IEEE 
+754 en pantalla, usar puerto 1, con las instrucciones IN AX,1 y OUT 1,AX</span></span></span></td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b><span lang="en-us">56</span> - <span lang="en-us">STF</span></b></span><span class=text><span class=note><b><span lang="en-us"> [mem]</span></b>
+      </span>
+</span>
+</td></tr></table>
+</span>
+</span>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span lang="en-us"><span class="note">Guarda en [mem] y mem+1 el contenido de BX 
+y AX</span></span></td><td valign=top>
+<span class=note>&nbsp;<span lang="en-us">Ej: siendo AX y BX = al ejemplo 
+anterior, un STF 2A deja la memoria como el ejemplo anterior</span>.</span>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b><span lang="en-us">60</span> - <span lang="en-us">ADDF</span></b></span><span class=text><span class=note><b><span lang="en-us"> [mem]</span></b>
+      </span>
+</span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note><span lang="en-us">&nbsp;Suma números 
+de 32 bits: En BX y AX queda el resultado de la suma de estos mas el contenido 
+de [mem] y mem+1</span>
+      </span>
+    </td><td valign=top>
+<span class=note>&nbsp;<span lang="en-us">Estos numeros IEEE 754 son numeros que 
+pueden ser de punto flotante, o enteros desde -2147483647 hasta 2147483647, si 
+en cualquier operación de estas aritmeticas, se sobrepasa este valor, se activa 
+el Overflow flag.</span></span></td></tr></table>
+<p>&nbsp;</span><table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000 height="16"><tr>
+  <td valign=top height="16">
+<span class=text>
+<span class=note><b>61 - <span lang="en-us">SUBF [mem]</span></b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Resta el numero de 32 bits: BX y AX = BX y AX - [mem]y mem+1
+      </span>
+    </td><td valign=top>
+<span class=note>&nbsp;<span lang="en-us">Puedes utilizar esta instrucción como un 
+CMP para numeros de 32 bits. </span></span>
+    </td></tr></table>
+<p>&nbsp;</span><table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=text>
+<span class=note><b><span lang="en-us">62</span> - <span lang="en-us">MULF [mem]</span></b>
+      </span>
+</td></tr></table>
+</span>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Multiplicac<span lang="en-us">i</span>ó<span lang="en-us">n:</span></span><span class=text><span class=note><br>
+BX y AX = BX y AX * [mem]y mem+1
+</span>
+    </td><td valign=top>
+<span class=note>&nbsp;<span lang="en-us">Si el resultado es &gt;</span></span>
+<span class=text>
+<span class=note><span lang="en-us">2147483647, Resultado = 2147483647&nbsp; y 
+Overflow Flag = 1</span></span></span></td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b><span lang="en-us">63</span> - <span lang="en-us">DIVF
+</span></b>
+      </span>
+<span class=text>
+<span class=note><b> <span lang="en-us">[mem]</span></b>
+      </span>
+</span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note><span lang="en-us">Division:</span></span><span class=text><span class=note><br>
+</span>
+</span>
+<span class=note><span lang="en-us">BX y AX = BX y AX / [mem]y mem+1, en CX 
+queda el residuo de la division en entero de 16 bits</span></span></td><td valign=top>
+<span class=note>&nbsp;</span>
+    </td></tr></table>
+<p>&nbsp;<span class=text><table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b><span lang="en-us">64</span> - <span lang="en-us">ITOF</span></b></span><span class=text><span class=note>
+      </span>
+</span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note><span lang="en-us">Conversión de Entero a Real:</span></span><span class=text><span class=note><br>
+</span>
+</span>
+<span class=note><span lang="en-us">Convierte un número entero (16bits) 
+almacenado en AX al mismo numero pero representado en Real IEEE754(32bits), el 
+Resultado de la conversión queda en BX (bits mas significativos) y AX <br>
+</span></span><span class=text><span class=note><br>
+</span>
+</span>
+<span class=note><span lang="en-us">Los registros de control cambian de acuerdo 
+al numero convertido: &quot;Z&quot; si el numero es cero, &quot;N&quot; si el numero es negativo.</span></span></td><td valign=top>
+<span class=note>&nbsp;</span>
+    </td></tr></table>
+</span>
+<p>&nbsp;<span class=text><table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b><span lang="en-us">65</span> - <span lang="en-us">FTOI</span></b></span><span class=text><span class=note>
+      </span>
+</span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+
+<span class=text>
+<span class=note><span lang="en-us">Conversión de Real a Entero:</span><br>
+Convierte un número Real(32bits)<span lang="en-us"> a su equivalente en entero</span> 
+BX y AX en un entero (16bits), <span lang="en-us">el </span>Resultado queda en 
+AX.</span></span><p>
+
+<span class=text>
+<span class=note><span lang="en-us">Los registros de control cambian de acuerdo 
+al numero convertido: &quot;Z&quot; si el numero es cero, &quot;N&quot; si el numero es negativo, 
+&quot;O&quot; si el numero real es mayor de 65535.</span></span></span></td><td valign=top>
+<span class=note>&nbsp;</span>
+    </td></tr></table>
+</span>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b><span lang="en-us">80</span> - <span lang="en-us">IN</span></b>
+<span lang="en-us"><b>registro,puerto</b></span></span></td></tr></table>
+</span>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=text>
+<span class=note><span lang="en-us">Lleva al Registro el valor retornado por el 
+puerto especificado.</span></span></td><td valign=top>
+<span class=note><span lang="en-us">Ej: IN AX,8&nbsp; ;lleva a AX el valor 
+retornado por el puerto 8 (Reloj: los segundos del sistema)</span>.</span>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b><span lang="en-us">8</span>1 - <span lang="en-us">OUT</span></b>
+<span lang="en-us"><b>puerto,registro</b></span></span></td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Escribe <span lang="en-us">en el puerto especificado, el valor 
+del registro.</span></span></td><td valign=top>
+<span class=note>&nbsp;</span>
+    </td></tr></table>
+<p>&nbsp;</p>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>90 - NOP</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Esta operaci&oacute;n
+no hace nada.&nbsp;
+      </span>
+    </td><td valign=top>
+<span class=note> &Uacute;til para cuando se modifica la memoria para parchar
+c&oacute;digo y desactivar instrucciones.
+      </span>
+    </td></tr></table>
+<p>&nbsp;<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#009000><tr><td valign=top>
+<span class=note><b>99 - HLT</b>
+      </span>
+</td></tr></table>
+<table width=88% cellpadding=0 cellspacing=0 border=0 bgcolor=#005000><tr><td valign=top>
+<span class=note>Terminar Programa
+      </span>
+    </td><td valign=top>
+<span class=note>&nbsp;Todo Programa lleva esta instrucción para indicarle al
+simulador que el programa ha terminado su ejecución.</span>&nbsp;
+    </td></tr></table>
+<p></center>
+  </td><td>&nbsp;</td><td valign=top align=left>&nbsp;</td></tr></table>
+<center><table width=90% cellpadding=0 cellspacing=0 border=0 bgcolor=#006000><tr>
+<td align=left valign=bottom>
+&nbsp;<a href="comofunc.html"> <span lang="en-us">VOLVER</span></a></td>
+<td valign=bottom align=right valign=bottom>&nbsp;</td></tr></table></center>
+
+
+<P>
+
+
+<center>
+<hr noshade width=100% color=#009000>
+</center>
+<table width=100% cellpadding=1 cellspacing=0 border=0>
+<tr>
+<td bgcolor=#00a000>
+<table width=100% cellpadding=2 cellspacing=0 border=0><tr>
+<td bgcolor=#004000><span class=note>
+SimuProc es Freeware, Puede ser usado y distribuido libremente.</span></td>
+<td bgcolor=#004000 align=right><span class=note>
+(c)200<span lang="en-us">4</span>&nbsp; Vlaye</span></td>
+</tr></table>
+</td></tr></table>
+
+<!-- BEGIN HumanTag Monitor. DO NOT MOVE! MUST BE PLACED JUST BEFORE THE /BODY TAG -->
+<script language='javascript' src='http://hc2.humanclick.com/hc/72946773/x.js?cmd=file&file=chatScript3&site=72946773&category=es;general;set-h'> </script>
+</span>
+<!-- END HumanTag Monitor. DO NOT MOVE! MUST BE PLACED JUST BEFORE THE /BODY TAG -->
+
+</body>
+
+</html>

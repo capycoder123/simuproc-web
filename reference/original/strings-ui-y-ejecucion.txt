@@ -1,0 +1,3101 @@
+vtna_estadis
+El Programa en Memoria
+vtna_estadis
+mostrar
+ sus estadist
+cas despu
+s o durante su ejecuci
+mens_main
+Detener Simulaci
+n para abrir otro programa?
+statusbar
+Simulando . . .
+vtna_ppal
+&Ejecutar
+menus
+&Ejecutar
+statusbar
+Simulaci
+n Detenida.
+Programas del Simulador (*.smp)
+*.smp
+Archivos Assembler (*.asm)
+*.asm
+Programas y Asm (*.smp, *.asm)
+*.smp;*.ASM
+Todos los Archivos (All Files)
+mens_main
+Cargar un Programa desde un Archivo
+*.smp
+SOFTWARE\Vlaye Software\Simulador de Procesador\Opciones
+Idioma
+Idioma
+smpr_esp.lng
+Idioma
+smpr_eng.lng
+Idioma
+smpr_oth.lng
+smpr_esp.lng
+mens_main
+No se pudo abrir el archivo.
+mens_main
+Archivo a Cargar
+statusbar
+Error al Intentar Abrir: 
+SimuProc
+mens_main
+Este archivo de una version Anterior, Parece estar Malo,
+Se detecto un final no esperado.
+statusbar
+Se ha Importado el Archivo de Version Anterior: 
+mens_main
+El archivo Parece estar Malo,
+Se detecto un final no esperado.
+statusbar
+Se ha Importado el Archivo de Version Anterior: 
+mens_main
+El archivo Parece estar Malo,
+Se detecto un final no esperado.
+statusbar
+Se ha Importado el Archivo de Version Anterior: 
+mens_main
+Desea Intentar Abrir el archivo de Todas Formas?
+mens_main
+Versi
+n No Compatible
+mens_main
+El archivo Parece estar Malo,
+Se detecto un final no esperado.
+statusbar
+Se ha Abierto el Archivo: 
+mens_main
+Versi
+n de archivo no reconocida por el Simulador.
+Visite la p
+gina Web para descargar la 
+ltima versi
+n de SimuProc.
+#SimuProc
+Usa el Editor Interno 2 Para cargar este archivo.
+00: 
+mens_main
+NO es un archivo V
+lido Para Abrir en este Simulador.
+Se abri
+ archivo de versi
+n anterior 0.9.9: 
+mens_main
+No se pudo abrir el archivo de salida.
+mens_main
+Archivo a grabar
+statusbar
+Error al Intentar Abrir: 
+SimuProc 1.4 - Vlaye
+statusbar
+Se Guardo Su Programa con Exito en: 
+mens_main
+v10t
+Guardar el Programa en un Archivo
+mens_main
+No hay ningun Programa en Memoria Para Grabar.
+mens_main
+No se pudo abrir el archivo de salida.
+mens_main
+Archivo a grabar
+statusbar
+Error al Intentar Abrir: 
+SimuProc 1.4 - Vlaye
+statusbar
+Se Guardo Su Programa con Exito en: 
+mens_main
+El Programa en Memoria ha Cambiado
+Desea Guardarlo??
+mens_main
+v17t
+Mensaje de SimuProc
+SOFTWARE\Vlaye Software\Simulador de Procesador
+VLAYE
+VLAYE
+-Numero de Ejecuciones-
+.Ultima Ejecucion
+-Numero de Ejecuciones-
+-Numero de Ejecuciones-
+.Antepenultima Ejecucion
+.Penultima Ejecucion
+.Penultima Ejecucion
+.Ultima Ejecucion
+.Ultima Ejecucion
+SOFTWARE\Vlaye Software\Simulador de Procesador\Opciones
+Color Lectura
+Color Lectura
+Color Lectura
+Color Escritura
+Color Escritura
+Color Escritura
+Idioma
+Idioma
+Idioma
+Idioma
+smpr_oth.lng
+Espa
+Spanish
+vtna_ppal
+Direcci
+vtna_ppal
+Valor
+vtna_ppal
+Valor
+mens_main
+Actualmente usted esta usando fuentes grandes en Windows.
+Lo cual puede hacer que no se vean bien los campos en el programa.
+mens_main
+v12t
+Advertencia
+mens_main
+Este programa no se visualiza bien en una resoluci
+n de no menos de 800x600
+Desea cambiar la resoluci
+n a 800x600?
+mens_main
+v13t
+Cambiar Resoluci
+mens_main
+Necesita reiniciar Windows
+mens_main
+Modo no Soportado.
+.smp
+SimuProc
+SimuProc
+SimuProc Programa (Asm)
+shell
+open
+open
+&Abrir este Programa en el Simulador
+command
+ "%1"
+FormLoader
+DefaultIcon
+mens_main
+No hay ningun Programa en la Memoria!!
+Introduzca uno:
+-instrucci
+n por instrucci
+-Escriba uno Usando el Editor
+-o Abra uno desde un archivo.
+mens_main
+v16t
+Atenci
+vtna_estadis
+mostrar
+ sus estadist
+cas despu
+s o durante su ejecuci
+vtna_ppal
+&Pausar
+menus
+&Pausar Simulaci
+statusbar
+Simulando . . .
+vtna_ppal
+&Reanudar
+menus
+&Reanudar Simulaci
+statusbar
+Simulaci
+n Detenida
+instr
+Cargue en AX el contenido de la direcci
+n de Memoria
+instr
+Guarde el contenido de AX en la direcci
+n de Memoria
+instr
+Intercambia los valores de AX y BX
+instr
+Hace AX = 0
+instr
+Envia el valor del registro especificado a la pila.
+instr
+Trae de la Pila el ultimo Valor llevado por PUSH (indicado por SP) y lo graba en el reg especificado.
+instr
+Incrementa en 1 el destino especificado.
+instr
+Decrementa en 1 el destino especificado, Si el destino queda = 0, se vuelve Z = 1
+instr
+Copia el valor almacenado en el origen al destino.
+instr
+Y logico, hace un Y logico entre los dos operandos escribiendo el resultado en el destino.
+instr
+NO logico, invierte los bits del operando formando el complemento del primero.
+instr
+O inclusive logico, todo bit activo en cualquiera de los operandos sera activado en el destino.
+instr
+O exclusivo, realiza un O exclusivo entre los operandos y almacena el resultado en destino.
+instr
+Rota los bits a la izq n veces, Bits que salen por la izq reentran por la Der. Carry F tiene el ultimo bit rotado.
+instr
+Rota los bits a la der n veces, Bits que salen por la der reentran por la izq. CF guarda ult. bit rotado.
+instr
+Desplaza los bits a la izq n veces, agregando ceros a la der, Carry Flag guarda ultimo bit desplazado.
+instr
+Desplaza los bits a la Der n veces, agregando ceros a la izq, Carry Flag guarda ultimo bit desplazado.
+instr
+AX = AX + el contenido de la direcci
+n de memoria
+instr
+AX = AX - el contenido de la direcci
+n de memoria
+instr
+BX,AX = AX * el contenido de la direcci
+n de memoria
+instr
+AX = BX,AX / el contenido de la dir de mem, BX=(BX,AX)% el contenido de la dir de mem.
+instr
+Limpia el Negative Flag.  N = 0
+instr
+Limpia el Carry Flag.  C = 0
+instr
+Pone el Carry Flag.  C = 1
+instr
+Complementa (invierte) el Carry Flag.  Si C = 1 vuelve C = 0 y viceversa.
+instr
+Decrementa CX y va a la Pos de memoria si CX no es cero.
+instr
+Salto Incondicional. PC = direcci
+n de memoria donde esta la sgte instrucci
+n a ejecutar
+instr
+Si Z = 1, PC = contenido de la memoria.
+instr
+Compara AX con [mem], si AX es mayor, Z=0 N=0, si es igual Z=1 N=0, si es menor Z=0 N=1
+instr
+Si N = 1, PC = contenido de la memoria
+instr
+Si Z = 0 y N = 0, PC = contenido de memoria
+instr
+Si C = 1, PC = contenido de memoria
+instr
+Si C = 0, PC = contenido de memoria
+instr
+Si O = 1, PC = contenido de memoria
+instr
+Si O = 0, PC = contenido de memoria
+instr
+Si Z = 0, PC = contenido de memoria
+instr
+Lee un valor del Teclado y lo lleva al registro AX; Escriba un comentario.
+vtna_ppal
+Escriba el comentario ac
+instr
+Escribe en Pantalla el contenido del registro AX
+vtna_ppal
+Escriba el comentario ac
+instr
+Escribe en Pantalla un comentario
+vtna_ppal
+Escriba el comentario ac
+instr
+Cargue en AX el contenido de la [dir de Mem] + BX (en bin)
+instr
+Guarda el contenido de AX en la [dir] + BX (en bin), ej: Digamos que BX=101 ; STB 3A guarda AX en 3F
+instr
+Carga en BX y AX el n
+mero de 32bits almacenado en [mem] y mem+1, en BX quedan los bits mas sifnificativos
+instr
+Guarda el n
+mero de 32 bits almacenado en BX y AX en la [mem] y mem+1
+instr
+Suma n
+meros de 32 bits: En BX y AX, queda el resultado de la suma de estos mas el contenido de [mem] y mem+1
+instr
+Resta el numero de 32 bits: BX y AX = BX y AX - [mem]y mem+1 
+instr
+BX y AX = BX y AX * [mem]y mem+1
+instr
+BX y AX = BX y AX / [mem]y mem+1,  en CX queda el residuo en entero de 16 bits
+instr
+Convierte el n
+mero entero (16bits) almacenado en AX en un numero Real (32bits), Resultado queda en BX y AX
+instr
+Convierte un n
+mero Real(32bits) BX y AX en un entero (16bits), Resultado queda en AX.
+instr
+Recibe en un registro, el valor retornado por el puerto especificado.
+instr
+Envia al puerto especificado, el valor de un registro
+instr
+Esta operaci
+n no hace nada. Util para cuando se modifica la memoria para parchar codigo.
+instr
+Terminar Programa
+instr
+Debe Seleccionar una Instrucci
+statusbar
+Se a
+ la instrucci
+LDA 
+statusbar
+Se a
+ la instrucci
+STA 
+03000
+statusbar
+Se a
+ la instrucci
+04000
+statusbar
+Se a
+ la instrucci
+statusbar
+Se a
+ la instrucci
+PUSH 
+statusbar
+Se a
+ la instrucci
+POP 
+statusbar
+Se a
+ la instrucci
+INC 
+statusbar
+Se a
+ la instrucci
+DEC 
+statusbar
+Se a
+ la instrucci
+MOV 
+statusbar
+Se a
+ la instrucci
+AND 
+statusbar
+Se a
+ la instrucci
+NOT 
+statusbar
+Se a
+ la instrucci
+statusbar
+Se a
+ la instrucci
+XOR 
+statusbar
+Se a
+ la instrucci
+ROL 
+statusbar
+Se a
+ la instrucci
+ROR 
+statusbar
+Se a
+ la instrucci
+SHL 
+statusbar
+Se a
+ la instrucci
+SHR 
+statusbar
+Se a
+ la instrucci
+ADD 
+statusbar
+Se a
+ la instrucci
+SUB 
+statusbar
+Se a
+ la instrucci
+MUL 
+statusbar
+Se a
+ la instrucci
+DIV 
+24000
+statusbar
+Se a
+ la instrucci
+25000
+statusbar
+Se a
+ la instrucci
+26000
+statusbar
+Se a
+ la instrucci
+27000
+statusbar
+Se a
+ la instrucci
+statusbar
+Se a
+ la instrucci
+LOOP 
+statusbar
+Se a
+ la instrucci
+JMP 
+statusbar
+Se a
+ la instrucci
+JEQ 
+statusbar
+Se a
+ la instrucci
+CMP 
+statusbar
+Se a
+ la instrucci
+JME 
+statusbar
+Se a
+ la instrucci
+JMA 
+statusbar
+Se a
+ la instrucci
+statusbar
+Se a
+ la instrucci
+JNC 
+statusbar
+Se a
+ la instrucci
+statusbar
+Se a
+ la instrucci
+JNO 
+statusbar
+Se a
+ la instrucci
+JNE 
+40000
+statusbar
+Se a
+ la instrucci
+vtna_ppal
+Escriba el comentario ac
+41000
+statusbar
+Se a
+ la instrucci
+vtna_ppal
+Escriba el comentario ac
+42000
+statusbar
+Se a
+ la instrucci
+vtna_ppal
+Escriba el comentario ac
+statusbar
+Se a
+ la instrucci
+LDB 
+statusbar
+Se a
+ la instrucci
+STB 
+statusbar
+Se a
+ la instrucci
+LDF 
+statusbar
+Se a
+ la instrucci
+STF 
+statusbar
+Se a
+ la instrucci
+ADDF 
+statusbar
+Se a
+ la instrucci
+SUBF 
+statusbar
+Se a
+ la instrucci
+MULF 
+statusbar
+Se a
+ la instrucci
+DIVF 
+64000
+statusbar
+Se a
+ la instrucci
+65000
+statusbar
+Se a
+ la instrucci
+statusbar
+Se a
+ la instrucci
+statusbar
+Se a
+ la instrucci
+OUT 
+90000
+statusbar
+Se a
+ la instrucci
+99000
+statusbar
+Se a
+ la instrucci
+HLT 
+statusbar
+(Programa Cargado en Memoria)
+statusbar
+SE LLENO LA MEMORIA
+vtna_ppal
+Introduzca un Registro: AX BX CX BP
+vtna_ppal
+Introduzca un Registro V
+lido: AX BX CX BP
+vtna_ppal
+Introduzca un Registro: AX BX CX BP, 
+ una Dir de mem desde 000 hasta 
+vtna_ppal
+Registro no v
+lido...Introduzca un Registro V
+lido: AX BX CX BP, o una Dir de Mem.
+vtna_ppal
+Introduzca un destino y un origen, pueden ser registros o dir de memoria.
+vtna_ppal
+metro no v
+lido, ejemplos: AX,CX 
+ 1F,BX 
+ 1,21 
+ CX,1A  Separelos con una coma.
+vtna_ppal
+No especific
+ una direcci
+n o registro de Origen v
+lido. Ejs: AX,BX 
+ 2F,1A 
+ BX,2F
+vtna_ppal
+No especific
+ una direcci
+n o registro de Destino v
+lido. Ejs: CX,BX 
+ 31F,1D 
+ CX,2E
+vtna_ppal
+Registro de Origen no v
+lido... Introduzca un Reg V
+lido: AX BX CX BP, o una Dir de Mem.
+vtna_ppal
+Registro de Destino no v
+lido... Introduzca un Reg V
+lido: AX BX CX BP, o una Dir de Mem.
+vtna_ppal
+Introduzca un Registro: AX BX CX, 
+ una Dir de mem desde 000 hasta 
+vtna_ppal
+Registro no v
+lido...Introduzca un Registro V
+lido: AX BX CX, o una Dir de Mem.
+vtna_ppal
+Entre un destino y n
+mero de veces, puede ser un registro o dir de memoria.
+vtna_ppal
+metro no v
+lido, ejemplos: AX,4 
+ 3B,14 
+ 111,2  Separelos con una coma.
+vtna_ppal
+No especifico un N
+mero de veces a realizar la operaci
+n. Ejs: AX,4 
+ 3B,14 
+ BX,7
+vtna_ppal
+Numero de veces muy grande. Ejs: AX,4 
+ 3B,15 
+ BX,7
+vtna_ppal
+No especific
+ una direcci
+n o registro de Destino v
+lido. Ejs: CX,1 
+ 31F,14 
+ CX,22
+vtna_ppal
+El N
+mero de veces Esta muy Grande.
+vtna_ppal
+mero de veces NO v
+lido. Ejs: AX,3 
+ 1C3,11 
+ BX,2
+vtna_ppal
+Registro de Destino no v
+lido... Introduzca un Reg V
+lido: AX BX CX BP, o una Dir de Mem.
+vtna_ppal
+Introduzca una Direcci
+n de Memoria en Hexadecimal, el rango va desde 000 hasta 
+vtna_ppal
+Dir de Mem No V
+lida, Solo Hexa desde 000 hasta 
+vtna_ppal
+Entre un destino y puerto de entrada, el destino es cualquier registro.
+vtna_ppal
+metro no v
+lido, ejemplos: AX,12 
+ BX,1  Separelos con una coma.
+vtna_ppal
+No especifico un puerto. Ejs: AX,4 
+ CX,14 
+ BX,9
+vtna_ppal
+Puerto muy grande. Ejs: AX,4 
+ BX,1 
+ CX,2
+vtna_ppal
+No especific
+ un registro de Destino v
+lido. Ejs: CX,1 
+ BX,14 
+ CX,12
+vtna_ppal
+Puerto muy grande. Ejs: AX,4 
+ BX,1 
+ CX,2
+vtna_ppal
+Puerto NO v
+lido. Ejs: AX,3 
+ CX,11 
+ BX,2
+vtna_ppal
+No especific
+ un registro de Destino v
+lido. Ejs: CX,1 
+ BX,14 
+ CX,12
+vtna_ppal
+Entre un puerto de salida, y un origen, el origen es cualquier registro.
+vtna_ppal
+metro no v
+lido, ejemplos: 12,AX 
+ 1,BX  Separelos con una coma.
+vtna_ppal
+No especific
+ un registro de origen v
+lido. Ejs: 1,CX 
+ 14,BX 
+ 12,CX
+vtna_ppal
+Puerto NO v
+lido. Ejs: 3,AX 
+ 11,CX 
+ 2,BX
+vtna_ppal
+Puerto muy grande. Ejs: 4,AX 
+ 1,BX 
+ 2,CX
+vtna_ppal
+Puerto NO v
+lido. Ejs: 3,AX 
+ 11,CX 
+ 2,BX
+vtna_ppal
+No especific
+ un registro de Origen v
+lido. Ejs: 1,CX 
+ 14,BX 
+ 12,CX
+vtna_ppal
+Introduzca una Direcci
+n de Memoria en Hexadecimal, el rango va desde 000 hasta 
+vtna_ppal
+Dir de Mem No V
+lida, Solo Hexa desde 000 hasta 
+statusbar
+Se Borr
+ la Ultima Instrucci
+statusbar
+No Hay ning
+n Programa en Memoria
+vtna_ppal
+No hay nada que Borrar!!
+statusbar
+El Programa se esta Ejecutando sin Animaci
+vtna_ppal
+Valor Hexa no V
+lido, entre valores solo entre 0-9 y A-F
+vtna_ppal
+Simulaci
+n de un Procesador
+vtna_ppal
+mostrar
+ sus estadist
+cas despu
+s o durante su ejecuci
+vtna_ppal
+Escriba el comentario ac
+smpr_esp.lng
+smpr_eng.lng
+smpr_oth.lng
+Para agregar otro idioma:
+Modifique el archivo "smpr_oth.lng" al idioma deseado.
+To Add another language:
+Edit the file "smpr_oth.lng" to your desired language.
+SOFTWARE\Vlaye Software\Simulador de Procesador\Opciones
+Idioma
+Idioma
+Idioma
+menus
+&Archivo
+menus
+&Simulaci
+menus
+&Utilidades
+menus
+&Ver
+menus
+&Opciones
+menus
+A&yuda
+menus
+&Dispositivos
+menus
+&Nuevo Programa
+menus
+&Abrir Programa...
+menus
+&Guardar Programa
+menus
+Guardar Programa &Como...
+menus
+&Salir
+menus
+&Ejecutar
+menus
+Es&tad
+sticas...
+menus
+&Reiniciar Registros
+menus
+&Modificar una Posici
+n de Memoria
+menus
+&Vigilante de Memoria...
+menus
+Conversi
+n de &bases...
+menus
+&Editor Interno...
+menus
+SimuProc Siempre &Visible
+menus
+&Barra de Herramientas
+menus
+Ba&rra de Estado
+menus
+&Configurar SimuProc...
+menus
+&Seleccionar Idioma
+menus
+&Acerca de...
+menus
+Co&ntenido...
+menus
+- Puertos E/S: -
+menus
+1 - Teclado y Pantalla (E y S) ...
+menus
+8 - Reloj (E)
+menus
+9 - Switches (E) ...
+menus
+13 - PC Speaker (S)
+toolbar
+Abrir un Programa
+toolbar
+1hint
+Abrir un archivo con Instrucciones
+toolbar
+2hint
+Mostrar estad
+sticas de la Simulaci
+toolbar
+3hint
+Modificar una Posici
+n de Memoria
+toolbar
+4hint
+Vigilante de Memoria
+toolbar
+5hint
+Conversi
+n de Bases
+toolbar
+Acerca de..
+toolbar
+6hint
+Acerca de Este Programa|
+toolbar
+Salir
+toolbar
+7hint
+Sale del Simulador
+toolbar
+Editor
+toolbar
+8hint
+Editor Interno para Escribir programas
+vtna_ppal
+Simulaci
+n de un Procesador
+vtna_ppal
+vtna_ppal
+Program Counter 
+ Instruction Pointer, Contiene el desplazamiento relativo en el segmento de c
+digo donde se est
+ ejecutando el programa actual.
+vtna_ppal
+vtna_ppal
+Memory Address Register
+vtna_ppal
+vtna_ppal
+Memory Data Register
+vtna_ppal
+vtna_ppal
+Instruction Register
+vtna_ppal
+vtna_ppal
+Base Pointer (Puntero de base de la Pila)
+vtna_ppal
+vtna_ppal
+Stack Pointer (Puntero de Pila)
+vtna_ppal
+vtna_ppal
+Arithmetic Logic Unit
+vtna_ppal
+Arithmetic Logic Unit
+vtna_ppal
+vtna_ppal
+Registro AX (Acumulador)
+vtna_ppal
+vtna_ppal
+Registro BX (base)
+vtna_ppal
+vtna_ppal
+Registro CX (contador)
+vtna_ppal
+Escriba el comentario ac
+vtna_ppal
+vtna_ppal
+vtna_ppal
+Contiene informaci
+n de la proxima direcci
+n de memoria a ejecutar
+vtna_ppal
+Aca se Decodifica e interpreta la Instrucci
+vtna_ppal
+Se Vuelve 1 si el resultado de la operacion = 0.  Si esta Depurando su programa le puede dar Doble Click para un cambio forzado.
+vtna_ppal
+1 si el resultado de la ultima Operacion = numero negativo
+vtna_ppal
+1 si hay Acarreo
+vtna_ppal
+1 si se produce overflow
+vtna_ppal
+Puede cambiar este valor desde un programa, asi: MOV BP, direccion de mem que contenga la direccion.
+vtna_ppal
+vtna_ppal
+vtna_ppal
+vtna_ppal
+vtna_ppal
+vtna_ppal
+vtna_ppal
+vtna_ppal
+Direcci
+vtna_ppal
+Valor
+vtna_ppal
+Valor
+vtna_ppal
+vtna_ppal
+Ver o no, Instrucciones Por Codigo de Op
+vtna_ppal
+b01h
+(AutoScroll) Mostrar posici
+n de memoria a la que se accede durante la simulaci
+n (Instrucciones)
+vtna_ppal
+b02h
+(AutoScroll) Mostrar posici
+n de memoria a la que se accede durante la simulaci
+n (Variables)
+vtna_ppal
+A&nimaci
+vtna_ppal
+Desactiva la animaci
+n de la simulaci
+n para una ejecuci
+n mas r
+pida en caso de que el programa sea muy largo y se tenga un adaptador de grafico lento.
+vtna_ppal
+&Ejecutar
+vtna_ppal
+vtna_ppal
+Cargar Instrucci
+n en Memoria
+vtna_ppal
+&Borrar
+vtna_ppal
+Borra la Ultima Instrucci
+n de la Memoria
+vtna_ppal
+&Mostrar
+vtna_ppal
+Registros Generales
+vtna_ppal
+Pila 
+ Stack
+vtna_ppal
+Registros de Control
+vtna_ppal
+Uso de Memoria y Pila
+vtna_ppal
+g4h1
+Indica el Porcentaje de uso de la memoria Simulada
+vtna_ppal
+g4h2
+Indica el Porcentaje de uso del espacio actual reservado para la pila
+vtna_ppal
+Entrada de Instrucciones Manualmente
+vtna_ppal
+g5h1
+Lista de Instrucciones (Cod Op - Instruccion [Parametros])
+vtna_ppal
+g5h2
+Escribir instrucciones manualmente a Partir de esta Direccion de Memoria
+vtna_ppal
+g5h3
+Escriba aca los parametros de la Instruccion. Direcci
+n de Memoria (en Hex) o registros.
+vtna_ppal
+g5h4
+Lo que escriba ac
+ se mostrar
+ en la pantalla para esta instrucci
+n en tiempo de ejecuci
+vtna_ppal
+Dispositivos de E/S
+vtna_ppal
+g6h1
+Dispositivo de Salida (Pantalla)
+vtna_ppal
+g6h2
+Dispositivo de Entrada (Teclado)
+vtna_ppal
+Control de la Simulaci
+vtna_ppal
+g7h1
+Desactiva la animaci
+n de la simulaci
+n para una ejecuci
+n mas r
+pida en caso de que el programa sea muy largo y se tenga un adaptador de grafico lento.
+vtna_ppal
+g7h2
+Velocidad de Simulaci
+vtna_ppal
+g8h1
+Registros del Procesador
+vtna_ppal
+g9h1
+Contenido de la Memoria
+vtna_ppal
+g9h2
+Memoria
+statusbar
+Simulando . . .
+statusbar
+Simulaci
+n Detenida.
+statusbar
+No Hay ning
+n Programa en Memoria
+instr
+01 - LDA [Direcci
+n Mem]
+instr
+02 - STA [Direcci
+n Mem]
+instr
+03 - XAB
+instr
+04 - CLA
+instr
+06 - PUSH registro
+instr
+07 - POP registro
+instr
+08 - INC [mem] 
+ [reg]
+instr
+09 - DEC [mem] 
+ [reg]
+instr
+10 - MOV dest,orig
+instr
+11 - AND dest,orig
+instr
+12 - NOT dest
+instr
+13 - OR  dest,orig
+instr
+14 - XOR dest,orig
+instr
+15 - ROL dest,veces
+instr
+16 - ROR dest,veces
+instr
+17 - SHL dest,veces
+instr
+18 - SHR dest,veces
+instr
+20 - ADD [Direcci
+n Mem]
+instr
+21 - SUB [Direcci
+n Mem]
+instr
+22 - MUL [Direcci
+n Mem]
+instr
+23 - DIV [Direcci
+n Mem]
+instr
+24 - CLN
+instr
+25 - CLC
+instr
+26 - STC
+instr
+27 - CMC
+instr
+29 - LOOP [Direcci
+n Mem]
+instr
+30 - JMP [Direcci
+n Mem]
+instr
+31 - JEQ [Direcci
+n Mem]
+instr
+32 - CMP [Direcci
+n Mem]
+instr
+33 - JME [Direcci
+n Mem]
+instr
+34 - JMA [Direcci
+n Mem]
+instr
+35 - JC  [Direcci
+n Mem]
+instr
+36 - JNC [Direcci
+n Mem]
+instr
+37 - JO  [Direcci
+n Mem]
+instr
+38 - JNO [Direcci
+n Mem]
+instr
+39 - JNE [Direcci
+n Mem]
+instr
+40 - LDT
+instr
+41 - EAP
+instr
+42 - MSG "mensaje"
+instr
+50 - LDB [Direcci
+n Mem]
+instr
+51 - STB [Direcci
+n Mem]
+instr
+55 - LDF [Direcci
+n Mem]
+instr
+56 - STF [Direcci
+n Mem]
+instr
+60 - ADDF [Direcci
+n Mem]
+instr
+61 - SUBF [Direcci
+n Mem]
+instr
+62 - MULF [Direcci
+n Mem]
+instr
+63 - DIVF [Direcci
+n Mem]
+instr
+64 - ITOF
+instr
+65 - FTOI
+instr
+80 - IN registro,puerto
+instr
+81 - OUT puerto,registro
+instr
+90 - NOP
+instr
+99 - HLT
+ LDA   
+ STA   
+ XAB
+ CLA
+ PUSH  
+ POP   
+ INC   
+ DEC   
+ MOV  
+ AND   
+ NOT   
+ OR    
+ XOR   
+ ROL   
+ ROR   
+ SHL   
+ SHR   
+ ADD   
+ SUB   
+ MUL   
+ DIV   
+ CLN
+ CLC
+ STC
+ CMC
+ LOOP  
+ JMP   
+ JEQ   
+ CMP   
+ JME   
+ JMA   
+ JC    
+ JNC   
+ JO    
+ JNO   
+ JNE   
+ LDT
+ EAP
+ MSG
+ LDB   
+ STB   
+ LDF   
+ STF   
+ ADDF  
+ SUBF  
+ MULF  
+ DIVF  
+ ITOF
+ FTOI
+ IN    
+ OUT   
+ NOP
+ HLT
+Desea Poner los Registros en Cero y suspender la ejecuci
+Reiniciar Programa?
+El Programa ha sido Terminado manualmente.
+Simulaci
+n Incompleta.
+vtna_ppal
+&Ejecutar
+vtna_ppal
+&Ejecutar
+90000
+ha sido interrumpido, estas son las estad
+sticas del programa:
+Usar LDT y EAP para pedir y mostrar operaciones con enteros.
+estas pueden mostrar un mensaje si se desea.
+Usar IN AX,1  y  OUT 1,AX  para pedir y mostrar numeros de punto flotante,
+ enteros desde -2GB hasta 2GB.
+Para mostrar mensajes, usar MSG
+Dispositivos
+Este puerto Retorna al registro especificado los segundos del sistema.
+(Sirve para generar n
+meros aleatorios)
+Ejemplo:
+ IN BX,8 ;Lleva a BX un numero entre 0 y 59
+Dispositivos
+PC Speaker:
+Genera sonidos a trav
+s del Altavoz de tu PC.
+Para generar un Sonido necesitas dar la frecuencia y la duraci
+n en milisegundos
+La frecuencia debe ser entre 7Hz y 32767Hz
+La frecuencia es leida del registro especificado en la instrucci
+n, y la
+duraci
+n es leida del registro BX
+Ejemplo: Supongamos que AX = 101000101000 y BX = 111110100
+OUT 13,AX ; produce un sonido de 2600Hz durante 500 ms
+Para averiguar los Hz de algunas notas se puede usar la sgte formula:
+Frecuencia, en Hertz = 440 * 2^[(octavo-4) + (nota/12)]
+Donde las notas comienzan as
+A=0 A#=1 B=2 C=3 C#=4 D=5 D#=6 E=7 F=8 F#=9 G=10 G#=11
+siendo:
+C=Do D=Re E=Mi F=Fa G=Sol A=La B=Si
+Por ejemplo: C6 => 440 * 2^[(6-4) + 3/12)] = 2093 Hz, 
+ casi 2.1 kHz
+Dispositivos
+SimuProc Help.chm
+open
+basic_string
+MainMenu
+FileNewItem
+FileOpenItem
+FileSaveItem
+FileSaveAsItem
+FileExitItem
+HelpAboutItem
+OpenDialog
+SaveDialog
+SpeedBar
+BotonAbrir
+BotonAcercaDe 
+BotonSalir$
+MenuArchivo(
+MenuAyuda,
+BarraEstado4
+MenuUtils8
+ModificarunaPosicindeMemoria1<
+conversiondebases@
+BotonModificaMemH
+BotonConvBasesL
+ConfSimuprocP
+MenuOpcionesT
+SimuProcsiempreVisibleX
+MenuSimulacion`
+MenuEjecutard
+MenuEstadisticash
+BotonEstadistl
+MenuVerp
+VerBarraHerramientast
+PaneldeArribax
+Bevel2|
+Bevel3
+ProgramIcon
+PCtitulo
+Bevel4
+Bevel5
+Bevel6
+PCvalor
+Bevel7
+MARvalor
+MDRvalor
+IRvalor
+RegistrosControl
+Zvalor
+Nvalor
+Ovalor
+Cvalor
+Robot
+PanelMemoria
+TablaMemoria
+PopupMenuMemoria
+Ensayodeclickderecho1
+PanelLetMemoria
+LabelMem1
+LabelMem2
+LabelMem3
+LabelMem4
+LabelMem5
+LabelMem6
+LabelMem7
+ImagenMemoria
+PanelGrandeDerecha
+PopupMenuFlags
+Flags
+Zflag$
+Nflag(
+CCarryFlag1,
+Oflag0
+ControlSimul4
+BarraVelMin8
+BarraVelMax<
+BarraVelocidad@
+AnimacionD
+PanelMemPilaH
+DispositESL
+ImagenPantallaP
+ImagenTecladoT
+BotonMostrarX
+MemoriaIndicadores\
+UsoDePila`
+UsoDeMemd
+PanelRegGenALUh
+CuadroEntDatosl
+ProxDirAModificarp
+PanelALU2t
+RegistrosGeneralesx
+AXvalor
+BXvalor
+CXvalor
+PilaoStack
+BPvalor
+SPvalor
+Image1
+ALUvalor
+PanelInstyParam
+ListaDeOp
+ValorInst
+PanelDerBotones
+BotonAgregarInst
+BotonBorrarInst
+ImagenNucleo
+PanelComentLet
+PanelCampoComent
+CampoComentario
+OpAIntroducirEnMem
+Button1
+VigiladorDeMem
+BotonVigilanteMem
+Button2
+SeleccionarIdioma1
+EspanolSpanish
+InglesEnglish
+OtroOther
+MostrarInst
+BotonEditor
+EditorInterno
+SeguirMem
+BotonEjecutar
+BtBandRoja
+BtBandVerde
+ImEnlace
+SeguirMemInst 
+ReiniciarRegs$
+MenuDisp(
+Switches,
+Pantallayteclado0
+Reloj4
+puertos8
+VerBarraEstado<
+PCSpeaker@
+HelpContenido<
+FileNew
+FileOpen
+FileSave
+FileSaveAs
+FileExit
+HelpAbout
+FormCreate
+BotonEjecutarClick
+ListaDeOpnCambio
+BarraVelocidadChange
+BotonAgregarInstClick
+ChequearValorInst'
+ MemModificadaPreguntoQuisoSalvar
+RegistrarSMP
+CambiarIdioma
+DetectarNewLines
+ConviertaInst
+ActualizarMem
+BotonBorrarInstClick
+ValorInstKeyPress
+ZvalorDblClick
+TablaMemoriaDrawCell
+conversiondebasesClick)
+"ModificarunaPosicindeMemoria1Click
+AnimacionClick
+NvalorDblClick
+OvalorDblClick
+CvalorDblClick 
+ProxDirAModificarKeyPress
+ProxDirAModificarChange
+AbrirArchivo$
+MostrarEnTituloArchivoAbierto"
+SimuProcsiempreVisibleClick
+ConfSimuprocClick
+MenuEstadisticasClick 
+VerBarraHerramientasClick
+BotonMostrarClick
+CampoComentarioClick
+Button1Click
+FormResize
+ListaDeOpKeyPress
+VigiladorDeMemClick
+FormClose
+Button2Click
+EspanolSpanishClick
+InglesEnglishClick
+OtroOtherClick
+MostrarInstClick
+BotonEditorClick
+EditorInternoClick
+FormShow
+SeguirMemInstClick
+SeguirMemClick
+ReiniciarRegsClick
+VerBarraEstadoClick
+PantallaytecladoClick
+RelojClick
+SwitchesClick
+PCSpeakerClick
+HelpContenidoClick
+TProcesad
+open
+mailto:vlaye@hotmail.com?subject=Sobre el Simulador SIMUPROC 1.4
+SOFTWARE\Vlaye Software\Simulador de Procesador
+-Numero de Ejecuciones-
+Wipi juu!
+Se leyo un dato para "numero de ejecuciones" no v
+lido de su registro de windows.
+Wmbejnjs!Zfqft!Cfepzb
+Colombia
+Control Panel\International
+sCountry
+Colombia
+open
+http://simuproc.cjb.net
+open
+http://simuproc.tk/
+open
+mailto:vyepesbe@eafit.edu.co?subject=Sobre el Simulador SIMUPROC 1.4
+OKButton
+PageControl1
+AcercaDe
+Ayuda
+Panel1
+ProgramIcon
+ProductName
+Version
+Autor
+EmailAutor
+Fecha
+NumEjec 
+SimuProcTitulo$
+PaginaInternet(
+Notas,
+Image10
+LabelPagWEB4
+PaginaInternet28
+emailEafit
+EmailAutorClick
+FormCreate
+PaginaInternetClick
+PaginaInternet2Click
+emailEafitClick
+TAboutBox
+Control Panel\International
+sDecimal
+Leo en PC la proxima direccion a ejecutar: 
+Envio al MAR la proxima direccion de mem a leer.
+Llevo al MDR el contenido de dicha direcci
+n de memoria.
+Le entrego al IR el dato para que lo decodifique e incremento el PC.
+Busco en la Pos de Mem 
+ lo que voy a cargar en AX.
+Llevo al MDR el contenido de la direcci
+Cargo en AX el contenido de la direcci
+Llevo la Pos de Mem 
+ a MAR que es donde voy a guardar AX.
+Leo AX Para ser llevado al MDR antes de ser escrito en Memoria
+Llevo a MDR el contenido de AX para luego escribirlo en 
+Escribo en la Pos 
+ el valor: 
+Se Intercambian los valores de AX y BX
+CLA: Vuelvo AX = 0
+&Ejecutar
+&Ejecutar
+Desbordamiento de la Pila.  Simulaci
+n Detenida.
+Error ....
+Pila Llena o Stack Overflow! Reserve mas espacio para la Pila cambiando BP.
+Llevo el Valor del Registro 
+ a la Pila.
+Escribo el la Pos 
+ el valor: 
+push
+Traigo de la pila el ultimo valor almacenado y lo llevo al Registro 
+El Simulador acaba de encontrar un error
+en su programa.
+La Instrucci
+n POP no puede ser utilizada
+sin haberse usado antes la instrucci
+n PUSH.
+Desea ignorar esta instrucci
+y seguir ejecutando su programa??
+Uso indebido de la instrucci
+n POP
+&Ejecutar
+&Ejecutar
+POP no puede usarse sin usar antes PUSH.
+Error....
+La pila esta vac
+a, uso indebido de POP.
+Escribo el la Pos 
+ el valor: 
+Leo AX (registro a incrementar) para llevarlo a la ALU y sumarle 1
+Leo BX (registro a incrementar) para llevarlo a la ALU y sumarle 1
+Leo CX (registro a incrementar) para llevarlo a la ALU y sumarle 1
+Leo BP (registro a incrementar) para llevarlo a la ALU y sumarle 1
+Overflow
+Escribo AX (registro ya incrementado)
+Overflow
+Escribo BX (registro ya incrementado)
+Overflow
+Escribo CX (registro ya incrementado)
+Escribo BP (registro ya incrementado)
+Leo de la Pos 
+ de memoria el valor a incrementar
+Overflow
+Escribo el valor en memoria ya incrementado en la pos 
+Leo AX (registro a Decrementar) para llevarlo a la ALU y restarle 1
+Leo BX (registro a Decrementar) para llevarlo a la ALU y restarle 1
+Leo CX (registro a Decrementar) para llevarlo a la ALU y restarle 1
+Leo BP (registro a Decrementar) para llevarlo a la ALU y restarle 1
+Escribo AX (registro ya decrementado)
+Escribo BX (registro ya decrementado)
+Escribo CX (registro ya decrementado)
+Escribo BP (registro ya decrementado)
+Leo de la Pos 
+ de memoria el valor a decrementar
+Escribo el valor en memoria ya decrementado en la pos 
+Leo AX para copiarlo a 
+Leo BX para copiarlo a 
+Leo CX para copiarlo a 
+Leo BP para copiarlo a 
+Leo de la Pos 
+ de memoria el valor a copiar en 
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+El Simulador acaba de encontrar un Valor
+lido para el destino especificado en
+la Instruccion MOV.
+En este caso el destino es "BP" que solo acepta
+direcciones en hexa. No otros valores.
+Desea ignorar esta instruccion y seguir ejecutandolo??
+Valor inv
+lido para el destino especificado en la Instruccion MOV
+&Ejecutar
+&Ejecutar
+BP solo acepta direcciones en Hexa, no otros valores, revise la inst MOV
+Error....
+Se ha intentado copiar un Valor no V
+lido a BP. Error en su programa.
+Escribo 
+ en 
+Escribo 
+ en 
+Leo AX para hacerle un Y logico con lo que esta en 
+Leo BX para hacerle un Y logico con lo que esta en 
+Leo CX para hacerle un Y logico con lo que esta en 
+Leo de la Pos 
+ de memoria el valor a hacerle el Y LOGICO con 
+Leo AX, el segundo parametro para hacerle un Y logico con 
+Leo BX, el segundo parametro para hacerle un Y logico con 
+Leo CX, el segundo parametro para hacerle un Y logico con 
+Leo de la Pos 
+ de memoria el valor a hacerle el Y LOGICO con el valor 
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+logicbits
+Leo AX Para hacer el NOT con el mismo.
+Leo BX Para hacer el NOT con el mismo.
+Leo CX Para hacer el NOT con el mismo.
+Leo de la Pos 
+ de memoria el valor Para hacer el NOT con el mismo.
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+logicbits
+Leo AX para hacerle un "O inclusive l
+gico" con lo que esta en 
+Leo BX para hacerle un "O inclusive l
+gico" con lo que esta en 
+Leo CX para hacerle un "O inclusive l
+gico" con lo que esta en 
+Leo de la Pos 
+ de memoria el valor a hacerle el "O inclusive logico" con 
+Leo AX, el segundo parametro para hacerle un "O inclusive l
+gico" con 
+Leo BX, el segundo parametro para hacerle un "O inclusive l
+gico" con 
+Leo CX, el segundo parametro para hacerle un "O inclusive l
+gico" con 
+Leo de la Pos 
+ de memoria el valor a hacerle el O INCLUSIVE LOGICO con el valor 
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+logicbits
+Leo AX para hacerle un "O exclusivo" con lo que esta en 
+Leo BX para hacerle un "O exclusivo" con lo que esta en 
+Leo CX para hacerle un "O exclusivo" con lo que esta en 
+Leo de la Pos 
+ de memoria el valor a hacerle el "O exclusivo" con 
+Leo AX, el segundo parametro para hacerle un "O exclusivo" con 
+Leo BX, el segundo parametro para hacerle un "O exclusivo" con 
+Leo CX, el segundo parametro para hacerle un "O exclusivo" con 
+Leo de la Pos 
+ de memoria el valor a hacerle el O exclusivo con el valor 
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+logicbits
+Leo AX Para hacerle La Rotaci
+n a la Izq 
+ veces.
+Leo BX Para hacerle La Rotaci
+n a la Izq 
+ veces.
+Leo CX Para hacerle La Rotaci
+n a la Izq 
+ veces.
+Leo de la Pos 
+ el valor Para hacerle La Rotaci
+n a la Izq 
+ veces.
+El Simulador acaba de encontrar un error
+en el par
+metro "veces" en la inst ROL
+Este par
+metro no es un entero v
+lido.
+Verifique que su programa no se haya
+modificado accidentalmente.
+Desea seguir ejecutando el programa??
+Entero no V
+lido en el parametro veces de la Instrucci
+n ROL
+&Ejecutar
+&Ejecutar
+metro veces no es un entero v
+lido para la instrucci
+n ROL
+Error....
+Verifique dicha instrucci
+n, que no se haya modificado accidentalmente
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+desplabits
+Leo AX Para hacerle La Rotaci
+n a la Der 
+ veces.
+Leo BX Para hacerle La Rotaci
+n a la Der 
+ veces.
+Leo CX Para hacerle La Rotaci
+n a la Der 
+ veces.
+Leo de la Pos 
+ el valor Para hacerle La Rotaci
+n a la Der 
+ veces.
+El Simulador acaba de encontrar un error
+en el par
+metro "veces" en la inst ROR
+Este par
+metro no es un entero v
+lido.
+Verifique que su programa no se haya
+modificado accidentalmente.
+Desea seguir ejecutando el programa??
+Entero no V
+lido en el parametro veces de la Instrucci
+n ROR
+&Ejecutar
+&Ejecutar
+metro veces no es un entero v
+lido para la instrucci
+n ROR
+Error....
+Verifique dicha instrucci
+n, que no se haya modificado accidentalmente
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+desplabits
+Leo AX Para hacerle el desplazamiento a la IZQ 
+ veces.
+Leo BX Para hacerle el desplazamiento a la IZQ 
+ veces.
+Leo CX Para hacerle el desplazamiento a la IZQ 
+ veces.
+Leo de la Pos 
+ el valor Para hacerle el desplazamiento a la IZQ 
+ veces.
+El Simulador acaba de encontrar un error
+en el par
+metro "veces" en la inst SHL
+Este par
+metro no es un entero v
+lido.
+Verifique que su programa no se haya
+modificado accidentalmente.
+Desea seguir ejecutando el programa??
+Entero no V
+lido en el parametro veces de la Instrucci
+n SHL
+&Ejecutar
+&Ejecutar
+metro veces no es un entero v
+lido para la instrucci
+n SHL
+Error....
+Verifique dicha instrucci
+n, que no se haya modificado accidentalmente
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+desplabits
+Leo AX Para hacerle el desplazamiento a la DER 
+ veces.
+Leo BX Para hacerle el desplazamiento a la DER 
+ veces.
+Leo CX Para hacerle el desplazamiento a la DER 
+ veces.
+Leo de la Pos 
+ el valor Para hacerle el desplazamiento a la DER 
+ veces.
+El Simulador acaba de encontrar un error
+en el par
+metro "veces" de la inst SHR
+Este par
+metro no es un entero v
+lido.
+Verifique que su programa no se haya
+modificado accidentalmente.
+Desea seguir ejecutando el programa??
+Entero no V
+lido en el parametro veces de la Instrucci
+n SHR
+&Ejecutar
+&Ejecutar
+metro veces no es un entero v
+lido para la instrucci
+n SHR
+Error....
+Verifique dicha instrucci
+n, que no se haya modificado accidentalmente
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+Escribo 
+ en 
+desplabits
+Llevo la Pos de Mem 
+ a MAR de donde esta lo que voy a sumar con AX
+Llevo al MDR el contenido de la direcci
+Leo AX y MDR Para ser llevados a la ALU y realizar la suma
+Despu
+s de Realizada la SUMA, almaceno el resultado en AX
+Como hubo Overflow activo el flag y parto el resultado en AX y BX
+matematica
+Llevo la Pos de Mem 
+ a MAR de donde esta lo que voy a restar a AX
+Llevo al MDR el contenido de la direcci
+Leo AX y MDR Para ser llevados a la ALU y realizar la resta
+Despu
+s de Realizada la RESTA, almaceno el resultado en AX
+matematica
+Llevo la Pos de Mem 
+ a MAR de donde esta lo que voy a multiplicar con AX
+Llevo al MDR el contenido de la direcci
+Leo AX y MDR Para ser llevados a la ALU y realizar la multiplicaci
+Despu
+s de Realizada la MULTIPLICACION, almaceno el resultado en AX
+matematica
+Llevo la Pos de Mem 
+ a MAR de donde esta lo que voy a Dividir con AX
+Llevo al MDR el contenido de la direcci
+Leo AX y MDR Para ser llevados a la ALU y realizar la divisi
+Realizada la Divisi
+n, almaceno el cociente en AX y el residuo en BX
+&Ejecutar
+&Ejecutar
+Su Programa Intent
+ hacer una Divisi
+n por Cero.  Simulaci
+n Detenida.
+Error ....
+Intento de Division por Cero.
+matematica
+Limpio el Negative Flag: Vuelvo N = 0
+Limpio el Carry Flag: Vuelvo C = 0
+Activo el Carry Flag: Vuelvo C = 1
+Leo el Carry Flag para invertirlo, Valor Actual: 
+Invierto el Carry Flag: Ahora queda en: 
+LOOP: Leo CX para llevarlo a la ALU y restarle 1
+Escribo CX (registro ya decrementado)
+saltocond
+LOOP: como CX > 0 Cambio el PC para que la prox direcci
+n a ejecutar sea: 
+JMP: Cambio el PC para que la prox direcci
+n a ejecutar sea: 
+saltoincond
+JEQ: Leo Z para ver si es igual a 1
+saltocond
+JEQ: Como Z = 1, la prox direcci
+n a ejecutar sera: 
+Llevo la Pos de Mem 
+ a MAR de donde esta lo que voy a restar a AX
+Llevo al MDR el contenido de la direcci
+Leo AX y MDR Para ser llevados a la ALU y realizar la resta para comparar
+comparacion
+JME: Leo N para ver si es igual a 1 "Comprobar si AX era menor"
+saltocond
+JME: Como N = 1, la prox direcci
+n a ejecutar sera: 
+JMA: Leo Z y N para ver si estan en cero, "ver si AX era mayor"
+saltocond
+JMA: Como N,Z = 0, la prox direcci
+n a ejecutar sera: 
+JC: Leo C para ver si es igual a 1.
+saltocond
+JC: Como C = 1, la prox direcci
+n a ejecutar sera: 
+JNC: Leo C para ver si es igual a 0.
+saltocond
+JNC: Como C = 0, la prox direcci
+n a ejecutar sera: 
+JO: Leo O para ver si es igual a 1.
+saltocond
+JO: Como O = 1, la prox direcci
+n a ejecutar sera: 
+JNO: Leo O para ver si es igual a 0.
+saltocond
+JNO: Como O = 0, la prox direcci
+n a ejecutar sera: 
+JNE: Leo Z para ver si es igual a 0.
+saltocond
+JNE: Como Z = 0, la prox direcci
+n a ejecutar sera: 
+Leo un Valor del Teclado. Para luego llevarlo a AX
+ENTRE UN DATO en la ventana de Dispositivos de E/S para continuar la Simulaci
+El Programa se esta Ejecutando sin Animaci
+entrada
+Escribo en Pantalla el Valor del registro AX
+salida
+Escribo en Pantalla Un Mensaje
+salida
+LDB: 
+ a esta direcci
+n le sumo el valor de BX: 
+ posiciones.
+El Valor de BX usado para sumarle a la Dir de mem de LDB
+Ha superado el final de la memoria.
+Desea Pausar la Simulaci
+LDB: Error
+Error ....
+Llevo al MDR el contenido de la direcci
+Cargo en AX el contenido de la direcci
+STB: 
+ a esta direcci
+n le sumo el valor de BX: 
+ posiciones.
+El Valor de BX usado para sumarle a la Dir de mem de LDB
+Ha superado el final de la memoria.
+Desea Pausar la Simulaci
+LDB: Error
+Error ....
+Llevo la Pos de Mem 
+ a MAR que es donde voy a guardar AX.
+Leo AX Para ser llevado al MDR antes de ser escrito en Memoria
+Llevo a MDR el contenido de AX para luego escribirlo en 
+Escribo en la Pos 
+ el valor: 
+Busco en la Pos de Mem 
+ y sgte, el nro de 32bits que voy a cargar en BX y AX.
+Llevo al MDR el contenido de la direcci
+Cargo en BX los digitos mas significativos: el contenido de la direcci
+Llevo al MDR el contenido de la sgte pos
+Cargo en AX los digitos menos significativos: el contenido de la direcci
+n sgte
+Llevo la dir de Mem 
+ a MAR que es donde se guardara BX y AX
+Leo BX (Bits mas significativos) Para ser llevado al MDR antes de ser escrito en Memoria
+Llevo a MDR el contenido de BX para luego escribirlo en 
+Escribo en la Pos 
+ el valor: 
+Leo AX Para ser llevado al MDR antes de ser escrito en Memoria
+Llevo a MDR el contenido de AX para luego escribirlo en la sgte pos de mem
+Escribo el la sgte Pos el valor: 
+Llevo la Pos de Mem 
+ a MAR de donde esta lo que voy a sumar con BX y AX
+Llevo al MDR el contenido de la direcci
+leo la sgte Pos de mem para completar el numero de 32 bits
+Leo BX y AX Para ser llevados a la ALU y realizar la suma con MDR
+Realizada la SUMA, almaceno resultado en BX (bits mas significativos) y AX (los menos)
+Como hubo Overflow activo el O flag
+matematica
+Llevo la Pos de Mem 
+ a MAR de donde esta lo que voy a restar con BX y AX
+Llevo al MDR el contenido de la direcci
+leo la sgte Pos de mem para completar el numero de 32 bits
+Leo BX y AX Para ser llevados a la ALU y realizar la Resta con MDR
+Realizada la RESTA, almaceno resultado en BX (bits mas significativos) y AX (los menos)
+Como hubo Overflow, activo el O flag
+matematica
+Llevo la Dir de Mem 
+ a MAR de donde esta lo que voy a multiplicar con BX y AX
+Llevo al MDR el contenido de la direcci
+leo la sgte Pos de mem para completar el numero de 32 bits
+Leo BX y AX Para ser llevados a la ALU y realizar la Multiplicaci
+n con MDR
+Realizada la Multiplicaci
+n, almaceno resultado en BX (bits mas significativos) y AX (los menos)
+Como hubo Overflow, activo el O flag
+matematica
+Llevo la Dir de Mem 
+ a MAR de donde esta lo que voy a dividir con BX y AX
+Llevo al MDR el contenido de la direcci
+leo la sgte Pos de mem para completar el numero de 32 bits
+Leo BX y AX Para ser llevados a la ALU y realizar la Divisi
+n con MDR
+Lista la Divisi
+n, Resultado en BX (bits mas significativos) y AX (los menos), CX = Residuo
+Como hubo Overflow, activo el O flag
+&Ejecutar
+&Ejecutar
+Su Programa Intent
+ hacer una Divisi
+n por Cero.  Simulaci
+n Detenida.
+Error ....
+Intento de Divisi
+n por Cero.
+matematica
+Leo AX Para ser llevado a la ALU y realizar la Conversi
+n a Real
+Realizada la Conversi
+n, almaceno resultado en BX (bits mas significativos) y AX (los menos)
+matematica
+Leo BX y AX Para ser llevados a la ALU y realizar la Conversion a Entero
+Realizada la Conversi
+n a entero, almaceno resultado en AX
+matematica
+Leo un Valor flotante positivo o negativo. Para luego llevarlo a BX y AX
+Decimal Flotante positivo o negativo
+ENTRE un numero entero o flotante, positivo o negativo, para continuar la Simulaci
+Decimal
+El Programa se esta Ejecutando sin Animaci
+Leo valor del puerto 
+ERROR en IN, no se puede leer del Puerto: 
+ERROR en IN, no hay ningun dispositivo conectado al puerto: 
+El Simulador acaba de encontrar un error
+en el par
+metro "puerto" en la inst IN
+Este par
+metro no es un entero v
+lido.
+Verif
+que que su programa no se haya
+modificado accidentalmente.
+Desea seguir ejecutando el programa??
+Puerto de entrada no V
+lido; Instrucci
+n IN
+&Ejecutar
+&Ejecutar
+Puerto no Valido para instrucci
+n IN. (debe ser un entero)
+Error....
+Verifique dicha instrucci
+n, que no se haya modificado accidentalmente
+El puerto 
+ retorno: 
+ Lo escribire en 
+Error ejecutando IN, registro no valido: 
+entrada
+Leo 
+ Para enviarle el valor al puerto: 
+Leo 
+ Para enviarle el valor al puerto: 
+Leo 
+ Para enviarle el valor al puerto: 
+Error ejecutando OUT, registro no v
+lido: 
+OUT Puerto 1: Leo numero binario almacenado en BX y AX Para ser mostrados en Pantalla
+Escribo en Pantalla el Valor del numero IEEE 754 formado en BX y AX
+ERROR en OUT, no se puede escribir en el Puerto: 
+Tocando: 
+ Hz   Duraci
+ ms.
+ERROR en OUT, no hay ningun dispositivo conectado al puerto: 
+El Simulador acaba de encontrar un error
+en el par
+metro "puerto" en la inst OUT
+Este par
+metro no es un entero v
+lido.
+Verif
+que que su programa no se haya
+modificado accidentalmente.
+Desea seguir ejecutando el programa??
+Puerto de salida no V
+lido; Instrucci
+n OUT
+&Ejecutar
+&Ejecutar
+Puerto no Valido para instrucci
+n OUT. (debe ser un entero)
+Error....
+Verifique dicha instrucci
+n, que no se haya modificado accidentalmente
+salida
+NOP - No se realiza ninguna operaci
+El Programa ha Terminado.
+Simulaci
+n Completa.
+&Ejecutar
+&Ejecutar
+ha terminado su ejecuci
+n con 
+xito, estas son las estad
+sticas del programa:
+El Simulador acaba de encontrar un Codigo
+de Operaci
+n no V
+lido en su programa.
+Desea ignorarlo y seguir ejecutandolo??
+Error en su Programa cargado
+&Reanudar
+&Reanudar Simulaci
+El Error esta en la Posici
+n de memoria: 
+Error ....
+Se leyo de memoria un Codigo de Operacion no reconocido.
+&Ejecutar
+&Ejecutar
+Intento de ejecuci
+n de una posici
+n de memoria en blanco en la Dir: 
+Error ....
+Su programa es erroneo o no tiene la instrucci
+n 99 - HLT
+instruccion
+Hertz (ciclos por segundo)
+Hertz (ciclos por segundo)
+miliHertz(mHz), NO MegaHertz(MHz) (un mHz es 1Hz/1000)
+microHertz(
+Hz) (1 
+Hz es 1Hz/1000000)
+Uso de Memoria: 
+instruccion
+saltocond
+saltoincond
+push
+comparacion
+logicbits
+matematica
+desplabits
+entrada
+salida
+El contenido de la direcci
+, ha cambiado de 
+ desea hacer?
+Si: Continuar la Simulaci
+n pausando si este valor vuelve a cambiar.
+No: si Continuar la Simulaci
+n pero no pausa mas si este valor cambia.
+Cancelar: No continuar con la simulaci
+El contenido de la direcci
+, es IGUAL al valor 
+ especificado por ud en la Posici
+n de Vigilancia "
+ desea hacer?
+Si: Continuar la Simulaci
+n pausando si este valor vuelve a ser igual al especificado.
+No: Si Continuar la Simulaci
+n pero sin pausar por comparar este valor.
+Cancelar: No continuar con la simulaci
+Vigilante de Memoria (Simulaci
+n en Pausa)
+01111111111111111111111111111111
+11111111111111111111111111111111
+00000000000000000000000000000000
+0000000000000000000000000000000
+Simulacion
+Longitud = 
+ Bits
+mero Decimal No V
+lido
+mero Binario No V
+lido, entre solo 1 y 0s.
+Valor Hexa no V
+lido, entre valores solo entre 0-9 y A-F
+mero Octal No V
+lido, entre solo n
+meros entre 0 y 7.
+Valor no v
+lido para la base 
+Valor no v
+lido para la base 
+Base 
+Valor no valido para la base 
+Otra Base
+ es un valor no v
+lido, solo se aceptan bases entre 2 y 36.
+Introduzca una Base.
+Debe Introducir una Base!
+Debe Introducir una Base!
+Base 
+Valor no valido para la base 
+Otra Base
+ es un valor no v
+lido, solo se aceptan bases entre 2 y 36.
+Introduzca una Base.
+&Menos Opc. <<
+&Mas Opciones >>
+Este N
+mero no puede representarse en 32 bits
+mero Decimal de punto flotante No V
+lido
+Ingrese los 32 bits
+0000000000000000000000000000000
+mero de punto flotante No V
+lido
+00000000000000000000000000000000
+1000
+Panel1
+Panel2
+LetDecimal
+LetBinario
+LetHexadecimal
+LetOctal
+LetOtraBase
+Errores
+ImagenCalc
+ImagenRarita
+Let2OtraBase
+Let1 
+Limite1$
+Let2(
+Limite2,
+CampoDecimal0
+CampoBinario4
+CampoOctal8
+CampoHexa<
+CampoOtraBase@
+BaseD
+BotonOKH
+UpDown1L
+UpDown2P
+Campo2OtraBaseT
+BaseSegX
+UpDown3\
+Instrc`
+instruccionesd
+BotonMasOpch
+GrupoNoEnterosl
+LetDecimalflotp
+CampoDecimalFlotantet
+CampoBinarioFlotantex
+LetBinFlot|
+CampoAscii
+LetAscii
+LetMantisa
+LetExp
+LetExplicacion
+mantisa
+binarioflot
+NumBin
+NumeroCalculado
+NumCalc
+Bevel1
+LetTraerNum
+DirMem
+LetY
+LetDirMem2
+CampoDecimalChange
+CampoBinarioChange
+CampoBinarioKeyPress
+CampoHexaChange
+CampoHexaKeyPress
+CampoOctalChange
+CampoOctalKeyPress
+CampoOtraBaseChange
+BaseChange
+BotonOKClick
+BaseKeyPress
+CampoOtraBaseKeyPress
+Campo2OtraBaseChange
+Campo2OtraBaseKeyPress
+BaseSegChange
+BotonMasOpcClick
+FormCreate!
+CampoDecimalFlotanteChange#
+CampoDecimalFlotanteKeyPress!
+CampoBinarioFlotanteChange 
+CampoBinarioFlotanteClick
+DirMemChange
+DirMemKeyPress
+TConvBases
+Direcci
+n Erronea
+Indique una Dir.
+Cambio Exitoso.
+BotonOK
+DirMem
+ContenidoMem
+Direccion
+Valor
+BotonModificar
+ImagenMemoria
+Mensaje
+BotonOKClick
+DirMemKeyPress
+DirMemChange
+ContenidoMemKeyPress
+BotonModificarClick
+FormMouseDownTModificaMem
+SOFTWARE\Vlaye Software\Simulador de Procesador\Opciones
+Color Lectura
+Color Escritura
+Num Lineas en Pantalla
+Tamano fuente
+SOFTWARE\Vlaye Software\Simulador de Procesador\Opciones
+Color Lectura
+Color Escritura
+SOFTWARE\Vlaye Software\Simulador de Procesador\Opciones
+Color Lectura
+Color Escritura
+Num Lineas en Pantalla
+Tamano fuente
+15000
+Panel2
+BotonOK
+CancelBtn
+ColorDialog1
+OpcionesConfig
+HojaOpcGenerales
+GroupBoxColor
+ColorLectura
+ColorEscritura
+CColorLect
+CColorEscr
+HojaSistema 
+GroupBox4$
+HojaAvanzado(
+GroupBox2,
+CheckBoxEditarMemoria0
+CheckBoxIgnorarErrores4
+HojaSalida8
+GroupBoxES<
+LabelTamLetraPantalla@
+LabelTamBufPantallaD
+NumLineasH
+TamFuenteL
+UpDown1P
+BotonDefectoEST
+BotonIncluirEscritorioX
+CheckResetEstadis\
+BotonMenuInicio`
+BotonAsociarArchivosd
+MostrarInsth
+Image1l
+GroupBoxAnimacionp
+BotonDefectot
+SeguirMemInstx
+SeguirMem|
+HojaEditor
+Image2
+Image3
+Image4
+GroupBoxEditor
+Sintaxis
+Canal
+NumeroLineas
+LabelTamFuente
+Marcadores
+TamFuenteEditor
+LabelEspacioLineas
+EspacioEntreLineas
+GroupBoxEditorPrint
+ImprimirSintaxis
+AjusteLinea
+ImprimirNumLineas
+ImprimirNumLineasMargen
+Image6
+Image7
+Image5
+AutoCorreccion
+RedondearFlot
+NumCifrasDec
+LetCifras
+ElimCerosDecimales
+CColorLectClick
+CColorEscrClick
+BotonDefectoClick
+BotonOKClick
+FormCreate
+CancelBtnClick
+BotonDefectoESClick
+TamFuenteChange
+NumLineasChange
+NumLineasKeyPress 
+BotonAsociarArchivosClick
+MostrarInstClick
+SintaxisClick
+CanalClick
+NumeroLineasClick
+MarcadoresClick
+TamFuenteEditorChange
+EspacioEntreLineasChange
+SeguirMemInstClick
+SeguirMemClick
+FormShow!
+CheckBoxEditarMemoriaClick
+AutoCorreccionClick
+RedondearFlotClick
+TConfiguracion
+SOFTWARE\Vlaye Software\Simulador de Procesador\Opciones
+Mostrar Estadisticas
+Mostrar Estadisticas
+Mostrar Estadisticas
+SOFTWARE\Vlaye Software\Simulador de Procesador\Opciones
+Mostrar Estadisticas
+Mostrar Estadisticas
+MostrarEstadisticasCheckBox
+PanelContenido
+Titulo
+Bevel2
+LetNumInstr
+NombreProg
+Aviso
+NumInstr
+BotonOK
+IconoPantallita
+Bevel1
+Bevel3 
+Bevel4$
+Bevel5(
+LetDuracion,
+LetVelocidad0
+Vel4
+LetTiempoProm8
+Letms<
+PromInst@
+SiglaD
+GrupoSaltosH
+LetSaltosCondL
+LetSaltosIncondP
+SaltosCondT
+SaltosIncondX
+GrupoPila\
+LetPush`
+LetPopd
+Pushsh
+Popsl
+GrupoOtrasp
+LetCompat
+LetLogicax
+Compar|
+LogicaBits
+LetMatem
+DelDespBits
+Matem
+DespBits
+GrupoES
+LetEntr
+Entrada
+LetSalida
+Salida
+FormCreate'
+ MostrarEstadisticasCheckBoxClick
+BotonOKClick
+TEstadis
+SimuProc 
+Entre un N
+mero
+SOFTWARE\Vlaye Software\Simulador de Procesador\Opciones
+Num Lineas en Pantalla
+Num Lineas en Pantalla
+Num Lineas en Pantalla
+Num Lineas en Pantalla
+Tamano fuente
+Tamano fuente
+Tamano fuente
+ltimo Dato (
+) se ha Leido Correctamente.
+ltimo Dato (
+) se ha Leido Correctamente.
+No toque este Bot
+n hasta que se le pida que entre un Dato.
+El n
+mero esta muy Grande
+Numero Decimal No V
+lido
+Numero Binario No V
+lido, entre solo 1 y 0s.
+El n
+mero esta muy Grande
+El n
+mero esta muy Peque
+Numero No V
+lido
+Panel1
+Panel2
+Panel3
+Panel4
+BaseMonitor
+LabelPpal
+Pantalla
+PanelBotonOcultar
+BotonOcultar
+Panel5
+GrupoTeclado
+LetDecimal 
+Errores$
+LetBinario(
+ImagenTeclado,
+CampoDecimal0
+CampoBinario4
+BotonLeeTeclOK8
+GrupoMonitor<
+ImagenPantalla@
+SalidaPantallaDecD
+SalidaPantallaBinH
+LabelUltDatoL
+Bevel1P
+CheckBoxScrollPantallaT
+BotonLimpiarX
+CampoDecimalFlotante
+BotonOcultarClick"
+CheckBoxScrollPantallaClick
+BotonLimpiarClick
+FormCreate
+BotonLeeTeclOKClick
+CampoDecimalChange
+CampoBinarioChange
+CampoBinarioKeyPress
+FormShow!
+CampoDecimalFlotanteChange#
+CampoDecimalFlotanteKeyPress
+TDispES
+&Menos Opc. <<
+&Mas Opciones >>
+M&enos Opc. <<
+M&as Opciones >>
+Me&nos Opc. <<
+Ma&s Opciones >>
+Men&os Opc. <<
+Mas &Opciones >>
+Menos O&pc. <<
+Mas O&pciones >>
+Menos Opc. <<
+Mas Opc&iones >>
+PanelBotones
+Inst
+PanelBotonOK
+BotonOK
+Panel1
+GrupoPos1
+Label1
+Label2
+Label4
+Label5
+Label6
+Label7 
+Label8$
+Label9(
+DirMem1,
+ValorActPos10
+Ult5ValPos14
+PausarPos18
+BtnMasOpci1<
+ValCompPos1@
+PausarPos1CompD
+Panel2H
+GrupoPos2L
+Label3P
+Label10T
+Label11X
+Label12\
+Label13`
+Label14d
+Label15h
+Label16l
+DirMem2p
+ValorActPos2t
+Ult5ValPos2x
+PausarPos2|
+BtnMasOpci2
+ValCompPos2
+PausarPos2Comp
+GrupoVerActivar
+Pos1
+Pos2
+Pos3
+Pos4
+Pos6
+Pos5
+Panel3
+GrupoPos3
+Label18
+Label19
+Label20
+Label21
+Label22
+Label23
+Label24
+Label25
+DirMem3
+ValorActPos3
+Ult5ValPos3
+PausarPos3
+BtnMasOpci3
+ValCompPos3
+PausarPos3Comp
+Panel4
+GrupoPos4
+Label26
+Label27
+Label28
+Label29
+Label30
+Label31
+Label32
+Label33
+DirMem4
+ValorActPos4
+Ult5ValPos4
+PausarPos4 
+BtnMasOpci4$
+ValCompPos4(
+PausarPos4Comp,
+Panel50
+GrupoPos54
+Label348
+Label35<
+Label36@
+Label37D
+Label38H
+Label39L
+Label40P
+Label41T
+DirMem5X
+ValorActPos5\
+Ult5ValPos5`
+PausarPos5d
+BtnMasOpci5h
+ValCompPos5l
+PausarPos5Compp
+Panel6t
+GrupoPos6x
+Label42|
+Label43
+Label44
+Label45
+Label46
+Label47
+Label48
+Label49
+DirMem6
+ValorActPos6
+Ult5ValPos6
+PausarPos6
+BtnMasOpci6
+ValCompPos6
+PausarPos6Comp
+Label50
+Label51
+Label52
+Label53
+Label54
+Label55
+PopupMenuBorrarValores
+BorrarEstosValores1
+Robot"
+BotonOKClick
+FormCreate
+Pos1Click
+Pos2Click
+Pos3Click
+Pos4Click
+Pos5Click
+Pos6Click
+BtnMasOpci1Click
+BtnMasOpci2Click
+BtnMasOpci3Click
+BtnMasOpci4Click
+BtnMasOpci5Click
+BtnMasOpci6Click
+PausarPos1Click
+PausarPos1CompClick
+BorrarEstosValores1Click
+PausarPos2Click
+PausarPos3Click
+PausarPos4Click
+PausarPos5Click
+PausarPos6Click
+PausarPos2CompClick
+PausarPos3CompClick
+PausarPos4CompClick
+PausarPos5CompClick
+PausarPos6CompClick
+DirMem1Change
+DirMem2Change
+DirMem3Change
+DirMem4Change
+DirMem5Change
+DirMem6Change
+DirMemKeyPress
+TVigilar
+Instrucci
+n par
+metro  ;comentario...
+#SimuProc 
+Limpiar Editor 1 ?
+Editor Tipo Memoria
+Ya existe un Programa en Memoria Principal
+Sobrescribir con este?
+Advertencia
+Se Recibi
+ el Programa del Editor Interno CON EXITO.
+ Error Encontrado!!
+ Errores Encontrados!!
+Desea ver los Errores?
+Error 1
+Error Numero: 
+ de 
+INSTRUCCION NO VALIDA en la Dir:
+Ver Siguiente Error?
+Error 2
+Error Numero: 
+ de 
+PARAMETRO NO VALIDO para la inst en la Dir:
+Ver Siguiente Error?
+Error
+03000
+04000
+PUSH
+24000
+25000
+26000
+27000
+LOOP
+40000
+41000
+42000
+ADDF
+SUBF
+MULF
+DIVF
+ITOF
+64000
+FTOI
+65000
+90000
+99000
+0000000000000000
+Error 1
+Error 1
+Error 1
+FTOI
+ITOF
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Error 2
+Limpiar Editor 2 ?
+Editor de Texto
+#SimuProc 
+Hay un Programa en el Editor 1
+Sobrescribir con el de La Memoria de SimuProc?
+Advertencia
+Hay un Programa en el Editor 2
+Sobrescribir con el del Editor 1?
+Advertencia
+#SimuProc 
+          
+Hay un Programa en el Editor 1
+Sobrescribir con el del Editor 2
+Advertencia
+SimuProc
+Linea: 
+  Col: 
+Linea: 
+  Col: 
+Hay un Programa en el Editor 2
+Sobrescribir con este?
+Advertencia
+#SimuProc 
+;Bienvenido a SimuProc
+;Aca podras ver algunos programas de ejemplo
+;------
+ ;Ejemplo 1:
+mo escribir un simple Programa!
+ ;como ya te pudiste dar cuenta, los comentarios empiezan con ';'
+   MSG "Hola mundo" ;Muestra un mensaje en Pantalla
+   HLT              ;Termina el Programa
+ ;Para ejecutar este programa, sigue los sgtes pasos:
+ ;Envialo al editor 1 usando el Boton [<-] de la barra de herramientas
+ ;Desde el editor 1, presiona el boton "Enviar a Memoria"
+ ;En la ventana de Simuproc, Presiona ejecutar.
+ ;Recuerda Mostrar la ventana de Dispositivos de Salida. Para poder ver la salida del programa.
+Hay un Programa en el Editor 2
+Sobrescribir con este?
+Advertencia
+#SimuProc 
+ ;Ejemplo 2:
+mo inicializar variables desde el c
+digo
+   MSG 'Programa Ejemplo 2'  ;Muestro el mensaje en Pantalla
+   MOV AX,D   ;Llevo el contenido de la direccion D al registro AX
+   EAP 'El numero almacenado en D es:'   ;Escribo el mensaje y el Valor de AX en pantalla
+   ADD E      ;le sumo al Contenido de AX el valor de la dir E, el resultado queda en AX
+   EAP 'La suma de estos dos numeros es:' ;Muestro en pantalla el mensaje, y el valor de AX
+   HLT        ;Termina el Programa
+ ;A continuacion inicializare estas variables a partir de la Pos D
+1101  ; Es el numero 13, los numeros se escriben en binario
+10101 ; Es el numero 21 y esta inicializado en la dir E, no hay necesidad de especificarlo, pues esta consecutivo a D
+Hay un Programa en el Editor 2
+Sobrescribir con este?
+Advertencia
+#SimuProc 
+ ;Ejemplo 3:
+mo pedirle datos al Usuario...
+ ;Este programa muestra c
+mo pedir datos al usuario
+   MSG 'Programa Ejemplo 3'  ;Muestro el mensaje en Pantalla
+   MSG 'Pedire dos numeros y realizare las operaciones aritmeticas basicas'
+   LDT 'Entre el Primer numero' ;Leo del teclado un numero que pedire al usuario, este luego sera llevado a AX
+   MOV 1C,AX   ;guardo el primer numero en 1C
+   LDT 'Entre el Segundo Numero'
+   MOV 1D,AX   ;Guardo el segundo numero en 1D
+   ADD 1C      ;AX = AX + 1C
+   EAP 'Suma:' ;Muestro el Valor de AX en pantalla
+   MOV AX,1C   ;AX = contenido de 1C  o sea cargo en AX el primer numero
+   SUB 1D      ;AX = AX - 1D
+   EAP 'Resta:'
+   MOV AX,1C   ;cargo en AX el primer numero
+   MUL 1D      ;AX = AX * 1D   Multiplicacion
+   EAP 'Mult:' ;Muestro el Valor de AX en pantalla
+   MOV AX,1C   ;AX = contenido de 1C  o sea cargo en AX el primer numero
+   DIV 1D      ;AX = AX / 1D  en BX queda el residuo
+   EAP 'Div:' ;Muestro el Valor de AX en pantalla
+   HLT        ;Fin del Programa
+Hay un Programa en el Editor 2
+Sobrescribir con este?
+Advertencia
+#SimuProc 
+ ;Ejemplo 4:
+mo Tomar decisiones...
+   MSG 'Programa Ejemplo 4'  ;Muestro el mensaje en Pantalla
+   MSG 'Toma de Decisiones'
+   LDT 'Entre un numero' ;Leo del teclado un numero que pedire al usuario, este luego sera llevado a AX
+   MOV 18,AX   ;guardo el primer numero en la dir 18
+   LDT 'Entre otro numero'
+   CMP 18      ;Comparo el contenido de AX con al dir 18 (los flags de control se modifican de acuerdo al resultado)
+   JMA A       ;Salto la ejecucion a la dir A en caso de que el numero en AX haya sido mayor (esta decision se toma leyendo los flags de control)
+   JEQ C       ;Salto la ejecucion a la dir C en caso de que el numero en AX haya sido igual con el que se compar
+ (esta decision se toma leyendo los flags de control)
+   ;si llega hasta aca, es porque ni el segundo numero era mayor que el primero o igual
+   MSG 'El primer numero fue Mayor'
+   JMP D       ;Realizo salto incondicional, voy a la dir D a preguntar si desea volver a empezar
+   ;aca viene cuando el segundo numero es el mayor
+   ;Nota: puedes ir enviando el programa al Editor 1 (tipo mem) para saber a que dir corresponden tus saltos.
+   MSG 'El segundo numero fue Mayor'
+   JMP D
+   ;aca viene cuando ambos numeros sean iguales
+   MSG 'Los numeros son iguales'
+   ;aca no hay necesidad de hacer salto incondicional, el programa sigue su flujo
+   ;Aqui vengo a preguntar si se desea volver a empezar
+   MSG 'Desea volver a empezar?'
+   LDT 'Escriba  1: para SI 
+ 2: para NO'
+   CMP 19   ;comparo con el numero 2 que esta en la pos 19
+   JME 2    ;Si es menor es porque escribio 1, entonces saltar
+ al ppio del programa
+   JEQ 14   ;Si es igual a 2, entonces voy y Termino el Programa
+   MSG 'Opcion no valida' ;Si puso otra opcion
+   JMP E    ;Vuelvo a preguntar
+   HLT      ;Fin del Programa
+ ;Aca inicializo el numero 2 para comparar en la pregunta final
+10  ;El numero 2
+Hay un Programa en el Editor 2
+Sobrescribir con este?
+Advertencia
+#SimuProc 
+ ;Ejemplo 5:
+ ;Operaciones con numeros de punto flotante...
+   MSG 'Programa Ejemplo 5'  ;Muestro el mensaje en Pantalla
+   MSG 'Numeros IEEE 754' ;Son numeros de punto flotante o enteros desde -2GB hasta 2GB
+   MSG 'Entre el primer numero..(puede ser negativo)'  ;Muestra un mensaje en la pantalla
+   IN    AX,1              ; Lee del Puerto 1 (El teclado, puerto 1 para leer numeros flotantes) (Para estos numeros se usa esta instruccion y no LDT)
+   STF   1A                ; Almaceno el numero de 32 bits en 1A y 1B, en 1A quedan los 16 bits mas significativos y en 1B los 16 menos significativos
+   MSG 'Entre el sgdo numero:' ;Puede ser un entero muy grande tambien, positivo, negativo, o de punto flotante
+   IN    AX,1
+   STF   1C
+   MSG 'Suma:'
+   ADDF  1A                ;Suma para numeros IEEE 754 de 32 bits   Sumo BX y AX con 1A y 1B, resultado queda en BX y AX
+   OUT   1,AX              ;El equivalente a EAP pero para estos numeros,  Escribo en pantalla el numero formado por los 32 bits de BX y AX
+   LDF   1A                ;Cargo en los registros BX y AX el numero almacenado en 1A y 1B, en BX quedan los 16 bits mas significativos, y en AX los 16 bits menos significativos
+   SUBF  1C                ;Resta de numeros de punto flotante, Tambien despues de esta instruccion se pueden usar saltos condicionales, porque es como una CMP para estos numeros
+   MSG 'Resta:'
+   OUT   1,AX
+   LDF   1A
+   MULF  1C
+   MSG 'Mult:'
+   OUT   1,AX
+   LDF   1A
+   DIVF  1C
+   MSG 'Div:'
+   OUT   1,AX
+   HLT                     ;Fin del Programa
+Hay un Programa en el Editor 2
+Sobrescribir con este?
+Advertencia
+#SimuProc 
+ ;Ejemplo 6:
+ ;Ejemplo de un Programa sencillo que halla la raiz cuadrada de un numero
+;El algoritmo para hallar la Raiz cuadrada de un numero, es el siguiente:
+;   leo numero                              //Al que le voy a sacar la raiz.
+;   y=1                                     //inicializo y en 1
+;   raiz = 2                                //inicializo raiz en 2
+;   mq (y != raiz) 
+ (y != raiz+1) haga     //Hago un Bucle que no termine hasta que 'y' sea diferente de raiz o raiz+1
+;       raiz = y
+;       y = ( y + ( numero / y )) / 2
+;   fin mq
+;   imprimo raiz
+;Ahora lo programaremos en Assembler asi:
+;Grabare las variables en memoria asi:
+; 2A   numero
+; 2C   raiz
+; 2E   y
+   MSG 'Programa Ejemplo 6'
+   MSG 'Entre un numero para Calcularle la Raiz Cuadrada'
+   IN AX,1               ;Leo el numero al que le calculare la Raiz Cuadrada
+   STF 2A                ;Grabo el numero en la dir 2A y 2B
+   LDF 30                ;Cargo el numero 1 en los registros
+   STF 2E                ;y = 1
+   LDF 32                ;Cargo el numero 2 en los registros
+   STF 2C                ;raiz = 2
+   ;Aca comienza el Bucle MQ
+   LDF 2E                ;Cargo y en los registros
+   SUBF 2C               ;Comparo 'y' con Raiz  (Nota, puedo usar SUBF para las comparaciones con numeros IEEE 754)
+   JEQ 17                  ;Si son iguales, salto al fin del ciclo
+   LDF 2C                ;Cargo Raiz en registros
+   ADDF 30               ;Le sumo 1
+   SUBF 2E               ;Comparo Raiz+1 con 'y'    (con la resta en los registros de control quedan los resultados, para luego tomar la decision)
+   JEQ 17                 ;si raiz+1 es igual a 'y', salto al fin del ciclo
+    ;terminada la condicion, ejecuto lo que esta dentro del bucle MQ
+   LDF 2E                ;Cargo 'y' en registros
+   STF 2C                ;raiz = y
+   LDF 2A                ;Cargo en registros, numero
+   DIVF 2E               ;Registros = numero / y
+   ADDF 2E               ;Registros = Registros + y
+   DIVF 32               ;Registros = Registros / 2
+   STF 2E                ;y = al valor de los registros BX y AX
+   JMP 8                 ;Vuelvo al Ppio del Ciclo  (FIN CICLO)
+   LDF 2C                ;Cargo el valor de raiz en registros BX y AX
+   MSG 'La Raiz es:'
+   OUT 1,AX              ;Muestro la raiz calculada
+   HLT                   ;Termina el programa
+  ;Inicializo las constantes 1 y 2 en IEEE 754
+0011111110000000    ;Inicializo el Numero 1 en la dir 30 y 31
+0000000000000000
+0100000000000000    ;numero 2 en la dir 32 y 33
+0000000000000000
+GrupoEditorIzq
+Separador
+GrupoEditorDer
+EdMem
+ToolBar1
+ToolBar2
+BtLimpiar1
+BtEnviarIaD
+BtLimpiar2
+ToolButton1
+BtEnviarAMem
+BtEnviarDaI 
+ToolButton2$
+BtAbrir(
+BtGrabar,
+PopUpEditor20
+Copiar4
+Cortar8
+Pegar<
+SeleccionarH
+EstadoEditor2L
+ToolButton3P
+BtDeMemAEd1T
+AbrirASMDialogX
+GuardarASMDialog\
+EstadoEditor1`
+ldad
+stah
+saltosl
+jmpp
+operx
+pila
+flags
+bits
+EdTexto
+Deshacer
+Rehacer
+SimuProcHL
+SynAutoCorrect1
+Comandos
+PopUpEditor1
+Limpiar
+Limpiar2
+EnviarIaD
+EnviarDaI
+DeMemAEd1
+EnviarAMem
+Abrir
+Guardar
+ToolButton4
+ToolButton5
+ToolButton6
+ToolButton8
+BtImprimir
+BtCortar
+BtCopiar
+BtPegar
+BtDeshacer
+BtRehacer
+BtConf
+ToolButton7
+BtEjem
+PopUpEditor2Ejemplos
+Programa1
+Editor2Print
+PrintDialog1 
+Imprimir$
+N10(
+Conf,
+Ejem0
+flot4
+ldf8
+stf<
+addf@
+subfD
+mulfH
+divfL
+msgP
+outX
+Programa2\
+Programa3`
+Programa4d
+Programa5h
+Programa6l
+Progp
+itoft
+ftoix
+FormCreate
+EdMemKeyPress
+BtLimpiar1Click
+BtEnviarAMemClick
+ErroresEditor1
+CheckInst1
+CheckDirHexaInvalida
+BtLimpiar2Click
+CopiarClick
+CortarClick
+PegarClick
+SeleccionarClick
+BtDeMemAEd1Click
+BtEnviarDaIClick
+BtEnviarIaDClick
+BtAbrirClick
+BtGrabarClick
+EdTextoMouseUp
+InsTextoEditor2
+DeshacerClick
+RehacerClick
+EdTextoKeyUp
+BtEjemClick
+BtImprimirClick
+BtConfClick
+Programa1Click

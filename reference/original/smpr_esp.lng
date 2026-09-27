@@ -1,0 +1,391 @@
+; (Español/Spanish) Traducción para SimuProc
+; Si modifica este archivo en Block de Notas(notepad)
+; Desactive la opción de Ajuste de Linea.
+;------------------------------------------
+
+[info]
+language=Español / Spanish
+version=1.4.3.0
+translator=Vlaye
+translatorEmail=vlaye@hotmail.com
+
+[menus]
+1=&Archivo
+2=&Simulación
+3=&Utilidades
+4=&Ver
+5=&Opciones
+6=A&yuda
+7=&Dispositivos
+
+10=&Nuevo Programa
+11=&Abrir Programa...
+12=&Guardar Programa
+13=Guardar Programa &Como...
+14=&Salir
+
+20=&Ejecutar
+20b=&Pausar Simulación
+20c=&Reanudar Simulación
+21=Es&tadísticas...
+22=&Reiniciar Registros
+
+30=&Modificar una Posición de Memoria...
+31=&Vigilante de Memoria...
+32=Conversión de &bases...
+33=&Editor Interno...
+
+40=SimuProc Siempre &Visible
+41=&Barra de Herramientas
+42=Ba&rra de Estado
+
+50=&Configurar SimuProc...
+51=&Seleccionar Idioma
+
+60=&Acerca de...
+61=Co&ntenido...
+
+70=- Puertos E/S: -
+701=1 - Teclado y Pantalla (E y S) ...
+708=8 - Reloj (E)
+709=9 - Switches (E) ...
+713=13 - PC Speaker (S)
+
+
+
+[toolbar]
+1=Abrir un Programa
+1hint=Abrir un archivo con Instrucciones
+2hint=Mostrar estadísticas de la Simulación
+3hint=Modificar una Posición de Memoria
+4hint=Vigilante de Memoria
+5hint=Conversión de Bases
+6=Acerca de..
+6hint=Acerca de Este Programa|
+7=Salir
+7hint=Sale del Simulador
+8=Editor
+8hint=Editor Interno para Escribir programas
+
+[vtna_ppal]
+;Ventana Principal
+tp=Simulación de un Procesador
+1=PC
+1h=Program Counter ó Instruction Pointer, Contiene el desplazamiento relativo en el segmento de código donde se está ejecutando el programa actual.
+2=MAR
+2h=Memory Address Register
+3=MDR
+3h=Memory Data Register
+4=IR
+4h=Instruction Register
+5=BP
+5h=Base Pointer (Puntero de base de la Pila)
+6=SP
+6h=Stack Pointer (Puntero de Pila)
+7=ALU
+7h1=Arithmetic Logic Unit
+7h2=Arithmetic Logic Unit
+11=AX
+11h=Registro AX (Acumulador)
+12=BX
+12h=Registro BX (base)
+13=CX
+13h=Registro CX (contador)
+15=Escriba el comentario acá
+16=Min
+17=Max
+18h=Contiene información de la proxima dirección de memoria a ejecutar
+19h=Aca se Decodifica e interpreta la Instrucción
+20h=Se Vuelve 1 si el resultado de la operacion = 0.  Si esta Depurando su programa le puede dar Doble Click para un cambio forzado.
+21h=1 si el resultado de la ultima Operacion = numero negativo
+22h=1 si hay Acarreo
+23h=1 si se produce overflow
+24h=Puede cambiar este valor desde un programa, asi: MOV BP, direccion de mem que contenga la direccion.
+30=M
+31=e
+32=m
+33=o
+34=r
+35=i
+36=a
+40=Dirección
+41= valor
+;Botones
+b0=Cod
+b0h=Ver o no, Instrucciones Por Codigo de Op
+b01h=(AutoScroll) Mostrar posición de memoria a la que se accede durante la simulación (Instrucciones)
+b02h=(AutoScroll) Mostrar posición de memoria a la que se accede durante la simulación (Variables)
+b1=A&nimación
+b1h=Desactiva la animación de la simulación para una ejecución mas rápida en caso de que el programa sea muy largo y se tenga un adaptador de grafico lento.
+b2=&Ejecutar
+b2b=&Pausar
+b2c=&Reanudar
+b3=O&k
+b3h=Cargar Instrucción en Memoria
+b4=&Borrar
+b4h=Borra la Ultima Instrucción de la Memoria
+b5=&Mostrar
+;grupos
+g1=Registros Generales
+g2=Pila ó Stack
+g3=Registros de Control
+g4=Uso de Memoria y Pila
+g4h1=Indica el Porcentaje de uso de la memoria Simulada
+g4h2=Indica el Porcentaje de uso del espacio actual reservado para la pila
+g5=Entrada de Instrucciones Manualmente
+g5h1=Lista de Instrucciones (Cod Op - Instruccion [Parametros])
+g5h2=Escribir instrucciones manualmente a Partir de esta Direccion de Memoria
+g5h3=Escriba aca los parametros de la Instruccion. Dirección de Memoria (en Hex) o registros.
+g5h4=Lo que escriba acá se mostrará en la pantalla para esta instrucción en tiempo de ejecución.
+g6=Dispositivos de E/S
+g6h1=Dispositivo de Salida (Pantalla)
+g6h2=Dispositivo de Entrada (Teclado)
+g7=Control de la Simulación
+g7h1=Desactiva la animación de la simulación para una ejecución mas rápida en caso de que el programa sea muy largo y se tenga un adaptador de grafico lento.
+g7h2=Velocidad de Simulación
+g8h1=Registros del Procesador
+g9h1=Contenido de la Memoria
+g9h2=Memoria
+;Errores al introducir instr
+e1=Introduzca un Registro: AX BX CX BP
+e2=Introduzca un Registro Válido: AX BX CX BP
+e3=Introduzca un Registro: AX BX CX BP, ó una Dir de mem desde 000 hasta 
+e4=Registro no válido...Introduzca un Registro Válido: AX BX CX BP, o una Dir de Mem.
+e5=Introduzca un destino y un origen, pueden ser registros o dir de memoria.
+e6=Parámetro no válido, ejemplos: AX,CX ó 1F,BX ó 1,21 ó CX,1A  Separelos con una coma.
+e7=No especificó una dirección o registro de Origen válido. Ejs: AX,BX ó 2F,1A ó BX,2F
+e8=No especificó una dirección o registro de Destino válido. Ejs: CX,BX ó 31F,1D ó CX,2E
+e9=Registro de Origen no válido... Introduzca un Reg Válido: AX BX CX BP, o una Dir de Mem.
+e10=Registro de Destino no válido... Introduzca un Reg Válido: AX BX CX BP, o una Dir de Mem.
+e11=Introduzca un Registro: AX BX CX, ó una Dir de mem desde 000 hasta 
+e12=Registro no válido...Introduzca un Registro Válido: AX BX CX, o una Dir de Mem.
+e13=Entre un destino y número de veces, puede ser un registro o dir de memoria.
+e14=Parámetro no válido, ejemplos: AX,4 ó 3B,14 ó 111,2  Separelos con una coma.
+e15=No especifico un Número de veces a realizar la operación. Ejs: AX,4 ó 3B,14 ó BX,7
+e16=Numero de veces muy grande. Ejs: AX,4 ó 3B,15 ó BX,7
+e17=No especificó una dirección o registro de Destino válido. Ejs: CX,1 ó 31F,14 ó CX,22
+e18=El Número de veces Esta muy Grande.
+e19=Número de veces NO válido. Ejs: AX,3 ó 1C3,11 ó BX,2
+e20=Introduzca una Dirección de Memoria en Hexadecimal, el rango va desde 000 hasta 
+e21=Dir de Mem No Válida, Solo Hexa desde 000 hasta 
+e22=No hay nada que Borrar!!
+e23=Valor Hexa no Válido, entre valores solo entre 0-9 y A-F
+e24=Entre un destino y puerto de entrada, el destino es cualquier registro.
+e25=Parámetro no válido, ejemplos: AX,12 ó BX,1  Separelos con una coma.
+e26=No especifico un puerto. Ejs: AX,4 ó CX,14 ó BX,9
+e27=Puerto muy grande. Ejs: AX,4 ó BX,1 ó CX,2
+e28=No especificó un registro de Destino válido. Ejs: CX,1 ó BX,14 ó CX,12
+e29=Puerto NO válido. Ejs: AX,3 ó CX,11 ó BX,2
+e30=Entre un puerto de salida, y un origen, el origen es cualquier registro.
+e31=Parámetro no válido, ejemplos: 12,AX ó 1,BX  Separelos con una coma.
+e32=No especificó un registro de origen válido. Ejs: 1,AX ó 14,BX ó 12,CX
+e33=Puerto NO válido. Ejs: 3,AX ó 11,CX ó 2,BX
+e34=Puerto muy grande. Ejs: 4,AX ó 1,BX ó 2,CX
+e35=No especificó un registro de Origen válido. Ejs: 1,CX ó 14,BX ó 12,CX
+
+[instr]
+0=Debe Seleccionar una Instrucción.
+1=01 - LDA [Dirección Mem]
+1i=Cargue en AX el contenido de la dirección de Memoria
+2=02 - STA [Dirección Mem]
+2i=Guarde el contenido de AX en la dirección de Memoria
+3=03 - XAB
+3i=Intercambia los valores de AX y BX
+4=04 - CLA
+4i=Hace AX = 0
+6=06 - PUSH registro
+6i=Envia el valor del registro especificado a la pila.
+7=07 - POP registro
+7i=Trae de la Pila el ultimo Valor llevado por PUSH (indicado por SP) y lo graba en el reg especificado.
+8=08 - INC [mem] ó [reg]
+8i=Incrementa en 1 el destino especificado.
+9=09 - DEC [mem] ó [reg]
+9i=Decrementa en 1 el destino especificado, Si el destino queda = 0, se vuelve Z = 1
+10=10 - MOV dest,orig
+10i=Copia el valor almacenado en el origen al destino.
+11=11 - AND dest,orig
+11i=Y logico, hace un Y logico entre los dos operandos escribiendo el resultado en el destino.
+12=12 - NOT dest
+12i=NO logico, invierte los bits del operando formando el complemento del primero.
+13=13 - OR  dest,orig
+13i=O inclusive logico, todo bit activo en cualquiera de los operandos sera activado en el destino.
+14=14 - XOR dest,orig
+14i=O exclusivo, realiza un O exclusivo entre los operandos y almacena el resultado en destino.
+15=15 - ROL dest,veces
+15i=Rota los bits a la izq n veces, Bits que salen por la izq reentran por la Der. Carry F tiene el ultimo bit rotado.
+16=16 - ROR dest,veces
+16i=Rota los bits a la der n veces, Bits que salen por la der reentran por la izq. CF guarda ult. bit rotado.
+17=17 - SHL dest,veces
+17i=Desplaza los bits a la izq n veces, agregando ceros a la der, Carry Flag guarda ultimo bit desplazado.
+18=18 - SHR dest,veces
+18i=Desplaza los bits a la Der n veces, agregando ceros a la izq, Carry Flag guarda ultimo bit desplazado.
+20=20 - ADD [Dirección Mem]
+20i=AX = AX + el contenido de la dirección de memoria
+21=21 - SUB [Dirección Mem]
+21i=AX = AX - el contenido de la dirección de memoria
+22=22 - MUL [Dirección Mem]
+22i=BX,AX = AX * el contenido de la dirección de memoria
+23=23 - DIV [Dirección Mem]
+23i=AX = BX,AX / el contenido de la dir de mem, BX=(BX,AX)% el contenido de la dir de mem.
+24=24 - CLN
+24i=Limpia el Negative Flag.  N = 0
+25=25 - CLC
+25i=Limpia el Carry Flag.  C = 0
+26=26 - STC
+26i=Pone el Carry Flag.  C = 1
+27=27 - CMC
+27i=Complementa (invierte) el Carry Flag.  Si C = 1 vuelve C = 0 y viceversa.
+29=29 - LOOP [Dirección Mem]
+29i=Decrementa CX y va a la Pos de memoria si CX no es cero.
+30=30 - JMP [Dirección Mem]
+30i=Salto Incondicional. PC = dirección de memoria donde esta la sgte instrucción a ejecutar
+31=31 - JEQ [Dirección Mem]
+31i=Si Z = 1, PC = contenido de la memoria.
+32=32 - CMP [Dirección Mem]
+32i=Compara AX con [mem], si AX es mayor, Z=0 N=0, si es igual Z=1 N=0, si es menor Z=0 N=1
+33=33 - JME [Dirección Mem]
+33i=Si N = 1, PC = contenido de la memoria
+34=34 - JMA [Dirección Mem]
+34i=Si Z = 0 y N = 0, PC = contenido de memoria
+35=35 - JC  [Dirección Mem]
+35i=Si C = 1, PC = contenido de memoria
+36=36 - JNC [Dirección Mem]
+36i=Si C = 0, PC = contenido de memoria
+37=37 - JO  [Dirección Mem]
+37i=Si O = 1, PC = contenido de memoria
+38=38 - JNO [Dirección Mem]
+38i=Si O = 0, PC = contenido de memoria
+39=39 - JNE [Dirección Mem]
+39i=Si Z = 0, PC = contenido de memoria
+40=40 - LDT
+40i=Lee un valor del Teclado y lo lleva al registro AX; Escriba un comentario.
+41=41 - EAP
+41i=Escribe en Pantalla el contenido del registro AX
+42=42 - MSG "mensaje"
+42i=Escribe en Pantalla un comentario
+50=50 - LDB [Dirección Mem]
+50i=Cargue en AX el contenido de la [dir] + BX (en bin), ej: Digamos que BX=10 ; LDB 1F carga 21 en AX
+51=51 - STB [Dirección Mem]
+51i=Guarda el contenido de AX en la [dir] + BX (en bin), ej: Digamos que BX=101 ; STB 3A guarda AX en 3F
+55=55 - LDF [Dirección Mem]
+55i=Carga en BX y AX el número de 32bits almacenado en [mem] y mem+1, en BX quedan los bits mas sifnificativos
+56=56 - STF [Dirección Mem]
+56i=Guarda el número de 32 bits almacenado en BX y AX en la [mem] y mem+1
+60=60 - ADDF [Dirección Mem]
+60i=Suma números de 32 bits: En BX y AX, queda el resultado de la suma de estos mas el contenido de [mem] y mem+1
+61=61 - SUBF [Dirección Mem]
+61i=Resta el numero de 32 bits: BX y AX = BX y AX - [mem]y mem+1
+62=62 - MULF [Dirección Mem]
+62i=BX y AX = BX y AX * [mem]y mem+1
+63=63 - DIVF [Dirección Mem]
+63i=BX y AX = BX y AX / [mem]y mem+1,  en CX queda el residuo en entero de 16 bits
+64=64 - ITOF
+64i=Convierte el número entero(16bits) almacenado en AX en un numero Real (32bits), Resultado queda en BX y AX
+65=65 - FTOI
+65i=Convierte un número Real(32bits) BX y AX en un entero (16bits), Resultado queda en AX.
+80=80 - IN registro,puerto
+80i=Recibe en un registro, el valor retornado por el puerto especificado.
+81=81 - OUT puerto,registro
+81i=Envia al puerto especificado, el valor de un registro
+90=90 - NOP
+90i=Esta operación no hace nada. Util para cuando se modifica la memoria para parchar codigo.
+99=99 - HLT
+99i=Terminar Programa
+
+
+[mens_main]
+;messageboxes
+v1t=Nuevo Programa?
+v1=Desea Borrar el Contenido de la Memoria?
+v2t=Cargar un Programa desde un Archivo
+v3t=Archivo a Cargar
+v3=No se pudo abrir el archivo.
+v4=Este archivo de una version Anterior, Parece estar Malo,\nSe detecto un final no esperado.
+v5t=Versión No Compatible
+v5=Desea Intentar Abrir el archivo de Todas Formas?
+v6=El archivo Parece estar Malo,\nSe detecto un final no esperado.
+v7=Versión de archivo no reconocida por el Simulador.\nVisite la página Web para descargar la última versión de SimuProc.
+v8=NO es un archivo Válido Para Abrir en este Simulador.
+v9t=Archivo a grabar
+v9=No se pudo abrir el archivo de salida.
+v10t=Guardar el Programa en un Archivo
+v11=No hay ningun Programa en Memoria Para Grabar.
+v12t=Advertencia
+v12=Actualmente usted esta usando fuentes grandes en Windows.\n\nLo cual puede hacer que no se vean bien los campos en el programa.\n
+v13t=Cambiar Resolución?
+v13=Este programa no se visualiza bien en una resolución de no menos de 800x600\nDesea cambiar la resolución a 800x600?
+v14=Necesita reiniciar Windows
+v15=Modo no Soportado.
+v16t=Atención
+v16=No hay ningun Programa en la Memoria!!\n\nIntroduzca uno:\n-instrucción por instrucción.\n-Escriba uno Usando el Editor\n-o Abra uno desde un archivo.
+v17t=Mensaje de SimuProc
+v17=El Programa en Memoria ha Cambiado\n\nDesea Guardarlo??
+v18=Detener Simulación para abrir otro programa?
+
+
+[statusbar]
+s1=Simulación Detenida.
+s2=Simulando . . .
+s3=Error ....
+s4=No Hay ningún Programa en Memoria
+s5=Error al Intentar Abrir: 
+s6=Se ha Importado el Archivo de Version Anterior: 
+s7=Se ha Abierto el Archivo: 
+s8=Se Guardo Su Programa con Exito en: 
+s9=Se añadió la instrucción: 
+s10=(Programa Cargado en Memoria)
+s11=SE LLENO LA MEMORIA
+s12=Se Borró la Ultima Instrucción
+s13=El Programa se esta Ejecutando sin Animación
+
+
+1=
+2=
+3=
+4=
+6=
+7=
+8=
+9=
+10=
+11=
+12=
+13=
+14=
+15=
+16=
+17=
+18=
+20=
+21=
+22=
+23=
+25=
+26=
+27=
+29=
+30=
+31=
+32=
+33=
+34=
+35=
+36=
+37=
+38=
+39=
+40=
+41=
+90=
+99=
+
+
+[vtna_estadis]
+;Ventana Estadisticas
+tv=Estadísticas de la Simulación
+t1=Estadísticas
+t2=El Programa en Memoria
+t3=mostrará acá sus estadistícas después o durante su ejecución.
+
+1=Instrucciones ejecutadas
+1h=Instrucciones ejecutadas o Cliclos realizados en la simulación

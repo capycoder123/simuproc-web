@@ -1,0 +1,163 @@
+__________
+ SimuProc
+¯¯¯¯¯¯¯¯¯¯
+
+Cambios desde la última Versión:
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+Version 1.4.3.0  (Feb 21 - 2004)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+-Se corrigio la instruccion INC, no detectaba overflow.
+-Se corrigio la instruccion MUL, no detectaba overflow en resultados mayores de 2GB.
+-las instrucciones logicas y de desplazamiento actualizan Z flag.
+-las instrucciones JMA y JME ya no limpian el N flag si la instruccion anterior era CMP
+-Nueva Instruccion CLN para limpiar el Negative Flag
+
+
+Version 1.4.2.0  (Ago 22 - 2003)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+-2 Instrucciones nuevas
+	-ITOF para convertir un número entero (16bits) a uno real (32bits). Ver documentación.
+	-FTOI para convertir un número real (32bits) a entero (16bits). Los registros de control cambian de acuerdo a los resultados(Ver documentación)
+-Opción para leer Desde el Conversor de Bases un número real directamente de la memoria.
+-Correcciones menores:
+	-ahora es posible reiniciar los registros despues de que un programa termina abruptamente por la ejecucion de un codigo de operación inválido.
+	-mejorado el algoritmo de validación de codigo que se envía a la memoria de simuProc desde el editor1.
+-Estilo de ventanas del estilo Windows XP en este S.O.
+
+
+Version 1.4.1.0  (Feb 1 - 2003)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+-Soporte de operaciones con Numeros de punto Flotante (IEEE 754) y enteros entre -2GB y 2GB
+-Nuevo Splash Screen con indicador de Progreso del Cargado de la aplicacion.
+-Nueva Opción Para Seguir los accesos de memoria (AutoScroll) a medida que se Ejecuta el programa.
+	-Instrucciones, Variables o Ambas
+-Ahora la animación puede ser apagada totalmente para una mayor velocidad de ejecución.
+-Editor2 ha sido Mejorado:
+	-Resalta Sintaxis: para las instrucciones, registros, parametros, dirs de mem, cadenas y comentarios.
+	-AutoCorreccion para algunas instrucciones de x86 a su equivalente en simuproc
+	-Removida la restricción de que las instrucciones tienen que escribirse a partir de la col 11
+	-Click derecho en el editor2 desplega nuevo menu, para agregar las instrucciones.
+	-Nueva barra de herramientas, Opciones de Edición e Impresión.
+-Conversor de Bases
+	-Agregada Conversión a numeros de punto flotante (reales) con el estandar IEEE 754 32 bits
+	-Conversión a caracteres Ascii
+-Nueve instrucciones nuevas:
+	-6 Para manejo de numeros flotante:
+		-LDF, STF, ADDF, SUBF, MULF y DIVF
+	-1 Para enviar solo mensajes a pantalla
+		-MSG
+	-2 para manejo de Dispositivos virtuales, via Puertos
+		-IN y OUT
+-Puertos Adicionados:
+	-Reloj: retorna los segundos del deloj del sistema
+	-manejo de numeros flotantes
+	-Switches
+	-PC-speaker: produce sonidos por el altavoz
+* y Otros cambios menores:
+-Ahora se Puede Reiniciar la ejecución de un programa en cualquier momento.(reninciando los Registros, en el Menu Simulación)
+-Al ejecutar SimuProc por primera vez ya no pregunta al usuario que idioma se desea, este se pone automatico dependiendo del idioma de windows.
+-Despues de ejecutar por 2da vez o mas la inst LDT, en La ventana de Entrada de Teclado ya no recuerda el ultimo valor entrado, que se prestaba para confusiones.
+-Ahora ya si se pueden inicializar variables en cero, El editor ya no reconoce el cero como instruccion no valida.
+-En el editor si no se le ponia mensaje a las instrucciones EAP y LDT este mostraba 'eap' y 'ldt' en la ejecucion. ya solo el valor de AX sin mensaje.
+-Se ha cambiado el look de la barra de herramientas, tipo win XP
+-Otras pequeñas mejoras.
+
+
+Version 1.3.6.3  (Ago 25 - 2002)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+-Luego de ejecutar La instruccion CMP ya no se modifica el valor de AX.
+-Se corrigio un error en el Editor 2, donde no se mostraban correctamente la Col y linea donde se encontraba el cursor.
+-En el Editor 2 al pasar a la sgte linea, ya se conserva automaticamente la sangria de la ultima linea insertada.
+-En el Editor 1, se muestra el porcentaje de uso de memoria del programa que se esta escribiendo.
+
+
+Version 1.3.6.2  (Ago 5 - 2002)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+-Se corrigio un pequeño error de la version 1.3.0.0 donde al agregar la instruccion 52 se agregaba tambien la 90.
+-Se corrigio que cuando creabas un archivo nuevo se conservaba el nombre anterior y si creabas uno nuevo, al usar Guardar, lo sobrescribias.
+-Ahora en memoria se ve las instrucciones asi JMP 4A en vez de 304A si se desea.
+-Nuevo EDITOR interno de Simuproc, ahora es mas facil escribir los programas, el editor viene en 2 formas. tipo memoria (con validacion), y tipo texto. ambos soportan comentarios tambien (estos comienzan con ";")
+-Actualizada la url del sitio Web.
+
+
+Version 1.3.0.0  (Ene 28 - 2002)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+-Nuevas Instrucciones LDB y STB, ahora es mas facil manejar estructuras de datos.
+-Soporte para otros Idiomas, adicionado el ingles, y modificando el archivo smpr_oth.lng se pueden configurar otros idiomas. (todavia no esta totalmente traducido, pero ya se puede traducir manualmente)
+-Nueva ventana de Abrir Archivos del tipo Win2000/ME/XP
+-Mas Opciones de Velocidad de Simulacion.
+-Se indica en la Barra de Estado con un * si el programa en memoria ha sido modificado.
+-Al Salir de SimuProc o al abrir otros programas se pregunta si desea guardar el programa actual si este se ha modificado.
+-Verifica que no se este simulando antes de abrir otro programa.
+
+
+Version 1.2.0.7  (Ago  6 - 2001)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+-Se actualizaron los URL de los mirrors de la Pagina WEB de SimuProc en Acerca de...
+
+Version 1.2.0.6  (Jul 14 - 2001)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+-Un Pequeño Cambio en la presentacion del programa.
+-Entrar las instrucciones con el teclado es ahora mas rapido.
+-Ahora se puede maximizar o cambiar el tamaño de la ventana ppal para tener una mejor vision del contenido de la memoria.
+-Los dispositivos de E/S se encuentran en otra ventana, la cual se mostrara automaticamente en el caso de LDT.
+	-Los Campos de Entrada solo estaran visibles cuando se necesite entrar un Dato.
+-En las Instrucciones de E/S (LDT y EAP) ya se pueden insertar comentarios en tiempo de programacion, los cuales se mostraran en tiempo de ejecucion para indicarle al usuario que dato se pide o se entrega.
+-Nuevo Menu Simulacion.
+-En Simulacion/Estadisticas: Se puede ver del ultimo programa ejecutado (o mientras se ejecuta) estadisticas como:
+	-Velocidad de la CPU Simulada, en Hz, miliHz o microHertz.
+	-Tiempo promedio de ejecución de cada instrucción.
+	-Numero de Ciclos realizados (instrucciones ejecutadas)
+	-Numero de saltos condicionales
+	-Numero de Saltos incondicionales.
+	-y mas...
+-Nueva Utilidad en el menu Utilidades: Vigilante de Memoria
+	-Se pueden vigilar variables en las posiciones de memoria, se dispone de un historial que muestra los ultimos 5 valores.
+-Nuevo Menu Ver, ahora si se quiere SimuProc puede estar siempre visible o no.
+-En Opciones/Configurar: 
+	-Se Pueden cambiar los colores de la animación.
+	-Se Puede editar memoria directamente.
+	-Puede ignorar las instrucciones no reconocidas (errores en su programa) en tiempo de ejecucion.
+	-Se Puede Cambiar el numero de lineas a mostrar en la Pantalla(Salida) y el tamaño de la fuente.
+-Se Mejoro la ventana de Conversiones de bases, mas opciones, se pueden convertir numeros mas grandes.
+-Se corrige un Bug en el cual algunas veces se producia un error si se salia del Simulador mientras se ejecutaba un programa a mucha velocidad.
+-Otras pequeñas mejoras internas al Simuproc.
+
+
+
+Version 1.1.0.26  (Abr 13 - 2001)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+- Se Muestra en el Titulo de la Aplicacion que archivo se encuentra Abierto.
+- Las Instrucción LDA y CMP no mostraban la animacion cuando leian la memoria..ahora ya si.
+- Más Parte de la animación puede ser desactivada para una ejecución más rapida. (todavia no apaga toda) para una prox version.
+
+
+
+Version 1.1.0.25  (Feb 19 - 2001)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+- Ahora ya se pueden Agregar instrucciones a Partir de una Posición especifica de Memoria. Util si se esta escribiendo un programa largo y se necesita editar, o continuar escribiendo este en varias sesiones.
+
+
+Version 1.1.0.24  (Dic 17 - 2000)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+-Se agrego la Instruccion JNE (Jump Not Equal | saltar si no Igual)
+-Se corrige un error en la division donde el residuo(modulo) se estaba hallando mal.
+-Se Corrige un error donde se mostraban numeros negativos dado a que despues de un CMP y luego algun Salto Condicional no se reseteaba el Negative Flag cuando era necesario.
+
+Version  0.9.9  (Ago 30 - 2000)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+-Primera Version.
+
+
+_________________________________
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+___________
+PAGINA WEB:
+__________________________
+http://simuproc.cjb.net
+o
+http://simuproc.tk
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+vlaye@hotmail.com

@@ -1,0 +1,24 @@
+# dependencies and build output
+node_modules
+dist
+dist-ssr
+*.local
+
+# tooling
+.vercel
+coverage
+test-results
+playwright-report
+.claude/
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# editors
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+.env*

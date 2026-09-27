@@ -1,0 +1,609 @@
+# Captions, hints y listas de los formularios (DFM) de Procesador.exe 1.4.3.0
+# Extraído con `strings -n 4` del binario desempaquetado (UPX). Las cadenas se cortan en cada
+# carácter acentuado (p. ej. 'Agregar Instrucci' = 'Agregar Instrucción'); un prefijo numérico o
+# símbolo pegado al inicio de un texto es un byte de longitud, no parte del texto.
+# Formularios: TProcesad = ventana principal, TDispES = Dispositivos de E/S, TEditor = Editor Interno,
+# TConfiguracion, TConvBases, TEstadis, TVigilar, TSwitch (puerto 9), TModificaMem, TAboutBox.
+
+
+########## TAboutBox (77 textos)
+Caption: Acerca de este Programa
+Caption: Default
+Caption: Acerca de . . 
+Hint: !.......El que Busca Encuentra....
+Caption: Simulador de un Procesador
+Caption: Version 1.4.3.0
+Hint: Autor del Programa
+Caption: Vladimir Yepes Bedoya
+Caption: vlaye@hotmail.com
+Hint: SimuProc  2000 - 2003
+Caption: Febrero 2004
+Hint: Numero de Ejecuciones
+Caption: -----
+Caption: S I M U P R O C
+Hint: http://simuproc.cjb.net
+Caption: Sitio 1
+Caption: gina WEB:
+Hint: http://simuproc.tk/
+Caption: Sitio 2
+Caption: vyepesbe@eafit.edu.co
+Caption: Ayuda
+  item: ___________________
+  item:   SimuProc - Contenido
+  item: DESCRIPCI
+  item: N DEL SIMULADOR.
+  item: COMO FUNCIONA.
+  item: )ESPECIFICACIONES DEL PROCESADOR SIMULADO.
+  item: 0================================================
+  item: Visita la P
+  item: gina WEB para obtener siempre la ultima version y 
+  item: para una mejor ayuda.
+  item:  encontrar
+  item: s Toda la informaci
+  item: n que necesitas por ahora.
+  item: http://simuproc.cjb.net/
+  item: http://simuproc.tk/
+  item: SimuProc es un Simulador de un Procesador Hipot
+  item: tico con el 
+  item: cual podr
+  item: s aprender las nociones b
+  item: sicas para empezar a 
+  item: 6programar en lenguaje ensamblador, en el cual podemos 
+  item: observar todo el proceso interno de ejecuci
+  item: n del programa a 
+  item: trav
+  item: s de cada ciclo del procesador. 
+  item: 5SimuProc con su gran variedad de instrucciones es un 
+  item: @simulador con el cual tienes infinitas posibilidades de pruebas.
+  item: Este Simulador Hipot
+  item: tico muestra como funciona un
+  item: procesador internamente. 
+  item: 8En el cual se puede ver que realiza este en cada Ciclo. 
+  item: %El Ciclo de un Procesador consta de: 
+  item: 1. El ciclo de Fetch 
+  item: -Va al PC 
+  item: -Va a la direcci
+  item: n que apunta el PC 
+  item: -Hace IR = MEM[PC] 
+  item: -Incrementa PC 
+  item: 2. El ciclo de Ejecuci
+  item: -Si tiene que ir a Memoria 
+  item: -va a Memoria 
+  item: -ejecuta instrucci
+  item: -almacena resultados.
+  item: <El simulador solo entiende lenguaje ensamblador(assembler). 
+  item: =Para ejecutar programas en el simulador, hay que escribirlos 
+  item: primero en este lenguaje. 
+  item: Memoria: 
+  item: La Memoria es el dispositivo que almacena toda la informaci
+  item: =del programa que se ejecuta, tanto datos como instrucciones. 
+  item: <Esta en realidad no es parte del procesador, sino que es un 
+  item: @dispositivo a parte al que el procesador accede para ir leyendo 
+  item: 'las instrucciones y datos del programa.
+  item: :La capacidad de la memoria Simulada es de 4096 posiciones 
+  item: de 16 bits cada una: 
+  item: *Desde 0 hasta 4095, o sea en hexadecimal: 
+  item: Desde 000 hasta FFF. 
+
+########## TConfiguracion (55 textos)
+Caption: Configurar SimuProc
+Caption: &Aceptar
+Caption: &Cancelar
+Caption: &Generales
+Caption: Color de Animaci
+Caption: Color de Lectura o Acceso
+Caption: Color de Escritura
+Hint: !Click para seleccionar otro Color
+Caption: Colores Por &Defecto
+Caption: Opciones de la Animaci
+Caption: "Perseguir Acceso de &Instrucciones
+Caption: &Perseguir Acceso de &Variables o Datos
+Caption: E&ditor 2
+Caption: Opciones del Editor 2
+Caption: Tama
+Caption: Espacio de Lineas
+Caption: &Resaltar Sintaxis
+Caption: Mostrar Canal
+Caption: Ver # Lineas
+Caption: Ver Marcadores
+Caption: Autocorrecci
+Caption: Opciones de Impresi
+Caption: Imprimir Sintaxis Resaltada
+Caption: Ajuste de Linea
+Caption: Mostrar # Lineas
+Caption: En la margen
+Caption: ImageIndex
+Caption: cifras decimales.
+Caption: Opciones de Entrada y Salida
+Hint: BCapacidad de Lineas que se mostraran Simultaneamente en el Monitor
+Caption: !Capacidad de # Lineas en Pantalla
+Hint: 2Buffer del Monitor (# de lineas) min 2, max  15000
+Text: 5000
+Caption: Por &Defecto
+Caption: &Redondear Numeros de Punto Flotante a:
+Text: TCheckBox
+Caption: #Eliminar Ceros decimales sobrantes.
+Caption: Ava&nzado
+Caption: Opciones Avanzadas
+Hint: 8Ud es responsable de colocar valores validos en memoria.
+Caption: %&Permitir editar memoria directamente
+Hint: BIgnora codigos de operacion no reconocidos en Tiempo de Ejecucion.
+Caption: %&Ignorar Instrucciones no reconocidas
+Hint: YAutomaticamente pone en cero las estadisticas al ejecutar un programa desde el principio.
+Caption: &Resetear estad
+Hint: FMuestra las instrucciones en memoria en vez del codigo de instruccion.
+Caption: &Mostrar Instrucci
+Caption: Sis&tema
+Caption: General
+Hint: >Crea un icono de acceso de Directo a SimuProc en el Escritorio
+Caption: "&Incluir SimuProc en el Escritorio
+Hint: Crea un icono de acceso de Directo a SimuProc en el Men
+Caption: Incluir SimuProc en el Men
+Hint: 4Asocia los archivos SMP con el explorador de Windows
+Caption: "A&sociar archivos SMP con SimuProc
+
+########## TConvBases (30 textos)
+Caption: Conversi
+Caption: Decimal
+Caption: Binario
+Caption: Hexadecimal
+Caption: Octal
+Caption: Otra Base
+Hint: whooooo!!!!!
+Hint: 3Rango de Teclas admitidas para la base Seleccionada
+Caption: 0 -
+Caption: 6
+Caption: A
+Caption: Ascii
+Text: OnChange
+Hint: Longitud Actual
+Hint: Todo Bien !!!! :P
+Caption: ModalResult
+Hint: =Para Valores mayores de 32767, Escriba el numero manualmente.
+Caption: Introduzca alg
+Caption: &Mas Opciones >>
+Caption: Numeros de Punto Flotante
+Caption: Base 10
+Caption: "Base 2: formato IEEE 754 - 32 bits
+Caption: Mantisa
+Caption: Exp D.
+Hint: *S=Signo  E=Exponente Desplazado  M=Mantisa
+Caption:  SEEEEEEEEMMMMMMMMMMMMMMMMMMMMMMM
+Caption: TLabel
+Caption: mero Calculado
+Caption: Leer n
+Hint: Direcci
+
+########## TDispES (21 textos)
+Caption: Dispositivos de E/S
+Hint: Pantalla y Teclado
+Caption: -Estos son los dispositivos de Entrada/Salida.
+Hint: Monitor
+Caption: O&cultar
+Caption: $Leer del Teclado el dato que se pide
+Caption: Decimal
+Caption: Binario
+Hint: Teclado
+Caption: &Entrar Dato
+Caption: Pantalla
+Hint: !Ultimo Dato enviado a la Pantalla
+Hint: +Ultimo Dato enviado a la Pantalla (Decimal)
+Hint: +Ultimo Dato enviado a la Pantalla (Binario)
+Caption: binario
+Hint: "Ultimo Dato enviado a la Pantalla:
+Caption: Ultimo Dato:
+Hint: 0Muestra la barra de desplazamiento en el monitor
+Caption: &Ver Scroll Monitor
+Hint: Limpia el contenido del Monitor
+Caption: &Limpiar Monitor
+
+########## TEditor (111 textos)
+Caption: Editor Interno de SimuProc
+Caption: Editor 1 (Tipo Memoria)
+Caption: ToolBar1
+Hint: Limpiar Editor 1
+Hint: Convertir a Editor 2
+Caption: ToolButton1
+Hint: 4Traer Programa desde Memoria Principal a el Editor 1
+Caption: ToolButton3
+Hint: Enviar a Memoria de SimuProc
+Caption: Enviar a Memoria
+Caption: Editor 2 (De Texto)
+Caption: ToolBar2
+Hint: Limpiar Editor 2
+Hint: Convertir a Editor 1
+Caption: ToolButton2
+Hint: #Cargar un programa desde un archivo
+Hint: Guardar Programa en un Archivo
+Caption: ToolButton4
+Hint: Imprimir Programa
+Caption: ToolButton5
+Hint: Cortar
+Hint: Copiar
+Hint: Pegar
+Caption: ToolButton6
+Hint: Deshacer
+Hint: Rehacer
+Caption: ToolButton8
+Hint: Opciones del Editor
+Caption: ToolButton7
+Hint: Programas de Ejemplo
+Text: Linea: ?  Col: ?
+Text: Width
+Caption: Agregar Instrucci
+Caption: LDA 
+Hint: LDA Mem
+Caption: STA 
+Caption: OnClick
+Caption: LDB 
+Caption: STB 
+Caption: MOV 
+Caption: --Aritm--
+Caption: INC 
+Caption: DEC 
+Caption: ADD 
+Caption: SUB 
+Caption: MUL 
+Caption: DIV 
+Caption: --Bits--
+Caption: AND 
+Caption: NOT 
+Caption: XOR 
+Caption: ROL 
+Caption: ROR 
+Caption: SHL 
+Caption: SHR 
+Caption: --Pila--
+Caption: PUSH 
+Caption: POP 
+Caption: --Flags--
+Caption: TMenuItem
+Caption: CMP 
+Caption: --Saltos--
+Caption: LOOP 
+Caption: JMP 
+Caption: JEQ 
+Caption: JME 
+Caption: JMA 
+Caption: JNC 
+Caption: JNO 
+Caption: JNE 
+Caption: -- E/S --
+Caption: LDT 
+Caption: EAP 
+Caption: MSG 
+Caption: OUT 
+Caption: -- Flot --
+Caption: LDF 
+Caption: STF 
+Caption: ADDF 
+Caption: SUBF 
+Caption: MULF 
+Caption: DIVF 
+Caption: ITOF
+Caption: FTOI
+Caption: Comandos
+Caption: Limpiar Editor 2
+Caption: Convertir a Editor 1
+Caption: #Cargar un programa desde un archivo
+Caption: Guardar Programa en un Archivo
+Caption: Imprimir Programa
+Caption: Opciones del Editor
+Caption: Programas de Ejemplo
+Caption: Deshacer
+Caption: Rehacer
+Caption: Cortar
+Caption: Copiar
+Caption: Pegar
+Caption: Seleccionar Todo
+DefaultExt: Filter
+Filter: 7SimuProc ASM (*.asm)|*.asm|Todos los archivos (*.*)|*.*
+Caption: Limpiar Editor 1
+Caption: Convertir a Editor 2
+Caption: 4Traer Programa desde Memoria Principal a el Editor 1
+Caption: --- Enviar a Memoria ---
+Caption:  - Programas de Ejemplo: -
+Caption: Programa &1 - Hola mundo
+Caption: Programa &2 - Iniciar variables
+Caption: Programa &3 - Pedir datos
+Caption: Programa &4 - Tomar decisiones
+Caption: 'Programa &5 - Numeros de Punto Flotante
+Caption: !Programa &6 - Programa de Ejemplo
+
+########## TEstadis (49 textos)
+Caption: Estad
+Hint: Mostrar Siempre esta ventana despu
+Caption: &Mostrar despu
+Hint: Instrucciones ejecutadas o Cliclos realizados en la simulaci
+Caption: Instrucciones ejecutadas
+Caption: El Programa en Memoria
+Caption: mostrar
+Caption: 0
+Caption: Duraci
+Hint: +Velocidad de Procesamiento del CPU Simulado
+Caption: Velocidad de Procesamiento:
+Caption: Tiempo promedio de ejecuci
+Hint: Milisegundos
+Caption: ms
+Hint: Hertz (ciclos por segundo)
+Caption: Hz
+Hint: Que Bien!!
+Caption: ModalResult
+Caption: Saltos...
+Hint: >Son todas las instrucciones como JME, JMA, JEQ, LOOP, JO, etc.
+Caption: Condicionales:
+Hint: Instrucci
+Caption: Incondicionales:
+Caption: Manejo de Pila
+Hint: dal terminar el programa, el numero de Push debe ser igual al de Pop, sino su programa tiene errores.
+Caption: Push:
+Caption: Pop:
+Caption: Otras operaciones..
+Caption: Comparaciones:
+Hint: OR, XOR, AND, etc...
+Caption: gicas con Bits
+Hint: ADD, SUB, MUL, DIV
+Caption: Aritm
+Hint: )Desplazamiento de Bits: SHR, SHL ROR, ROL
+Caption: Desp Bits:
+Caption: TabOrder
+Hint: LDT 
+Caption: Entrada:
+Hint: EAP, MSG 
+Caption: Salida:
+Caption: Modificar una Posici
+Caption: Direcci
+Caption: Valor
+Hint: Memoria
+Hint: Todo bien!
+Hint: Direcci
+Hint: Valor de Dicha direcci
+Hint: Cambiar el contenido de dicha posici
+Caption: &Modificar !!
+
+########## TProcesad (194 textos)
+Caption: Simulaci
+Hint: "Abrir un archivo con Instrucciones
+Caption: Abrir un Programa
+Hint: Acerca de Este Programa|
+Caption: Acerca de..
+Hint: Sale del Simulador
+Caption: Salir
+Hint: Modificar una Posici
+Hint: Conversi
+Hint: Mostrar estad
+Hint: Vigilante de Memoria
+Hint: &Editor Interno para Escribir programas
+Caption: Editor
+Text: Simulaci
+Text: Width
+Text: No Hay ning
+Hint: Registros del Procesador
+Hint: Program Counter 
+Caption: PC
+Hint: Memory Address Register
+Caption: MAR
+Hint: Memory Data Register
+Caption: MDR
+Hint: Instruction Register
+Caption: IR
+Hint: Contiene informaci
+Caption: Color
+Caption: TLabel
+Caption: 0000000000000000
+Hint: Aca se Decodifica e interpreta la Instrucci
+Caption: 00000
+Hint: Beep
+Caption: Registros de Control
+Hint: Zero Flag
+Caption: Z
+Hint: Se Vuelve 1 si el resultado de la operacion = 0.  Si esta Depurando su programa le puede dar Doble Click para un cambio forzado.
+Hint: :1 si el resultado de la ultima Operacion = numero negativo
+Hint: Negative o Sign Flag
+Caption: N
+Hint: OverFlow Flag
+Caption: O
+Hint: 1 si se produce overflow
+Hint: Carry Flag
+Caption: C
+Hint: 1 si hay Acarreo
+Hint: Contenido de la Memoria
+Caption: e
+Caption: m
+Caption: o
+Caption: r
+Caption: i
+Caption: a
+Hint: Memoria
+Hint: (Ver o no, Instrucciones Por Codigo de Op
+Caption: Flat
+Hint: (AutoScroll) Mostrar posici
+Caption: ParentShowHint
+Caption: Control de la Simulaci
+Caption: TTrackBar
+Hint: Velocidad de Simulaci
+Hint: Desactiva la animaci
+Caption: A&nimaci
+Caption: Ensayo de Crypt
+Caption: &Ejecutar
+Caption: Dispositivos de E/S
+Hint:  Dispositivo de Salida (Pantalla)
+Hint:  Dispositivo de Entrada (Teclado)
+Caption: &Mostrar
+Caption: Uso de Memoria y Pila
+Hint: EIndica el Porcentaje de uso del espacio actual reservado para la pila
+Hint: 2Indica el Porcentaje de uso de la memoria Simulada
+Caption: $Entrada de Instrucciones Manualmente
+Hint: :Lista de Instrucciones (Cod Op - Instruccion [Parametros])
+  item: 01 - LDA [Direcci
+  item: n Mem]
+  item: 02 - STA [Direcci
+  item: 03 - XAB
+  item: 04 - CLA
+  item: 06 - PUSH registro
+  item: 07 - POP registro
+  item: 08 - INC [mem] 
+  item:  [reg]
+  item: 09 - DEC [mem] 
+  item: 10 - MOV dest,orig
+  item: 11 - AND dest,orig
+  item: 12 - NOT dest
+  item: 13 - OR  dest,orig
+  item: 14 - XOR dest,orig
+  item: 15 - ROL dest,veces
+  item: 16 - ROR dest,veces
+  item: 17 - SHL dest,veces
+  item: 18 - SHR dest,veces
+  item: 20 - ADD [Direcci
+  item: 21 - SUB [Direcci
+  item: 22 - MUL [Direcci
+  item: 23 - DIV [Direcci
+  item: 24 - CLN
+  item: 25 - CLC
+  item: 26 - STC
+  item: 27 - CMC
+  item: 29 - LOOP [Direcci
+  item: 30 - JMP [Direcci
+  item: 31 - JEQ [Direcci
+  item: 32 - CMP [Direcci
+  item: 33 - JME [Direcci
+  item: 34 - JMA [Direcci
+  item: 35 - JC  [Direcci
+  item: 36 - JNC [Direcci
+  item: 37 - JO  [Direcci
+  item: 38 - JNO [Direcci
+  item: 39 - JNE [Direcci
+  item: 40 - LDT "mensaje"
+  item: 41 - EAP "mensaje"
+  item: 42 - MSG "mensaje"
+  item: 50 - LDB [Direcci
+Hint: Escriba aca los parametros de la Instruccion. Direcci
+Hint: HEscribir instrucciones manualmente a Partir de esta Direccion de Memoria
+Text: OnChange
+Hint: Cargar Instrucci
+Hint: Borra la Ultima Instrucci
+Caption: &Borrar
+Caption:                      
+Hint: Lo que escriba ac
+Text: Escriba el comentario ac
+Hint: Arithmetic Logic Unit
+Caption: ALU
+Caption: Registros Generales
+Hint: Registro AX (Acumulador)
+Caption: AX
+Hint: Registro BX (base)
+Caption: BX
+Hint: Registro CX (contador)
+Caption: CX
+Caption: Pila 
+Hint: )Base Pointer (Puntero de base de la Pila)
+Caption: BP
+Hint: dPuede cambiar este valor desde un programa, asi: MOV BP, direccion de mem que contenga la direccion.
+Hint: Stack Pointer (Puntero de Pila)
+Caption: SP
+Caption: TListBox
+Caption: &Archivo
+Caption: &Nuevo Programa
+Hint: ;Borra Las instrucciones de la memoria del Procesador Actual
+Caption: &Abrir Programa...
+Hint: !Abre un archivo con instrucciones
+Caption: &Guardar Programa
+Hint: /Guarda las Instrucciones actuales en un archivo
+Caption: Guardar Programa &Como...
+Hint: Guarda con un nuevo nombre
+Caption: TMenuItemFileExitItem
+Caption: &Salir
+Caption: &Simulaci
+Caption: &Ejecutar
+Caption: &Reiniciar Registros
+Caption: TMenuItem
+Caption: Es&tad
+Hint: 3Muestra estadisticas del ultimo programa ejecutado.
+Caption: &Dispositivos
+Caption:  - Puertos E/S: -
+Caption: "1 - Teclado y Pantalla (E y S) ...
+Caption: 8 - Reloj (E)
+Caption: 9 - Switches (E) ...
+Caption: 13 - PC Speaker (S)
+Caption: &Utilidades
+Caption: &Editor Interno...
+Caption: &Modificar una Posici
+Caption: &Vigilante de Memoria...
+Caption: Conversi
+Hint: &Util para convertir de una base a otra
+Caption: &Ver
+Caption: SimuProc Siempre &Visible
+Hint: DActivelo para hacer que SimuProc siempre este visible en su Pantalla
+Caption: &Barra de Herramientas
+Caption: Ba&rra de Estado
+Caption: &Opciones
+Caption: &Configurar SimuProc...
+Hint: !Opciones para Configurar SimuProc
+Caption: &Seleccionar Idioma
+Caption: &Espa
+Caption: English / &Ingles
+Caption: &Otro / Other
+Caption: A&yuda
+Caption: Contenido...
+Caption: &Acerca de...
+Hint: 'Muestra la Informacion de este poograma
+DefaultExt: Filter
+Filter: Programas del Simulador (*.smp)|*.smp|Archivo de Texto (*.txt)|*.txt|Archivos Ensamblador (*.asm)|*.asm|Programas, Texto y Asm (*.smp, *.txt, *.asm)|*.smp;*.txt;*.ASM|Todos los Archivos|*.*
+Filter: Programas del Simulador (*.smp)|*.smp|Archivo de Texto (*.txt)|*.txt|Archivos Ensamblador (*.asm)|*.ASM|Programas, Texto y Asm (*.smp, *.txt, *.asm)|*.smp;*.txt;*.ASM|Todos los Archivos|*.*
+Caption: Modificar una Posici
+Caption: Modificar Flags (Banderas)
+Caption: Z (Zero Flag)
+Caption: N (Negative 
+Caption: C (Carry Flag)
+Caption: O (Overflow Flag)
+
+########## TSplashScreenSplashScreen (7 textos)
+Caption: SplashScreen
+Hint: SimuProc por Vlaye
+Hint: Por Vlaye
+Hint: Loading
+Caption: Cargando.....
+Caption: Splash...
+Caption: v1.4
+
+########## TSwitch (6 textos)
+Caption: Switches - Puerto 9
+Caption: 0000000000000000
+Caption: FEDCBA9876543210
+Caption: OnClick
+Hint: Ok!!!
+Caption: ModalResult
+
+########## TVigilar (32 textos)
+Caption: Vigilante de Memoria
+Caption: +Puede Vigilar hasta 6 posiciones de Memoria
+Caption: Ver/Activar
+Caption: Checked
+Caption: ParentBiDiMode
+Caption: O&cultar
+Caption: Label50
+Caption: Posici
+Caption: Dir
+Caption: Valor Actual
+Caption: 1
+Caption: 2
+Caption: Ultimos 5 Valores
+Caption: 3
+Caption: 4
+Caption: 5
+Hint: Direcci
+Hint: Muestra los ultimos 5 valores que ha tenido esta posici
+Hint: Pausar la Simulaci
+Caption: Pa&usar Simulaci
+Caption: &Mas Opciones >>
+Hint: Escriba un Valor para que la Simulaci
+Hint: Pausa la Simulaci
+Caption: Pausa&r solo si el Valor es = 
+Caption: Pausar Simulaci
+Caption: M&as Opciones >>
+Caption: Pausar solo si el Valor es = 
+Caption: Ma&s Opciones >>
+Caption: Mas &Opciones >>
+Caption: Mas O&pciones >>
+Caption: Mas Opc&iones >>
+Caption: Borrar Estos Valores

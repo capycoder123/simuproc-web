@@ -1,0 +1,351 @@
+; English translation for SimuProc
+; send corrections to vlaye@hotmail.com
+; if you use notepad to modify this file,
+; disable word wrap
+;------------------------------------------
+
+[info]
+language=English
+version=1.4.3.0
+translator=Vlaye
+translatorEmail=vlaye@hotmail.com
+
+[menus]
+1=&File
+2=&Simulation
+3=&Utilities
+4=&View
+5=&Options
+6=&Help
+7=&Devices
+
+10=&New Program
+11=&Open Program...
+12=&Save Program
+13=Save Program &As...
+14=E&xit SimuProc
+
+20=&Run
+21=S&tatistics...
+22=R&estart Registers
+
+30=&Modify a memory address...
+31=Memory &Watches...
+32=&Bases Converter...
+33=Internal &Editor...
+
+40=&Always On Top
+41=&Show ToolBar
+42=S&how StatusBar
+
+
+50=SimuProc &Settings...
+51=Choose &Language
+
+60=&About SimuProc...
+61=Co&ntents...
+
+70=- I/O Ports: -
+701=1 - Keyboard and Screen (I and O) ...
+708=8 - Clock (I)
+709=9 - Switches (I) ...
+713=13 - PC Speaker (O)
+
+
+
+[toolbar]
+1=Open a Program
+1hint=Open a file with instructions
+2hint=Show Simulation Statistics
+3hint=Modify a memory address
+4hint=Memory Watches
+5hint=Bases Converter
+6=About...
+6hint=About SimuProc
+7=Exit
+7hint=Exit SimuProc
+8=Editor
+8hint=Internal Editor to Write programs
+
+[vtna_ppal]
+;main window
+tp=Processor Simulation
+1=PC
+1h=Program Counter or Instruction Pointer
+2=MAR
+2h=Memory Address Register
+3=MDR
+3h=Memory Data Register
+4=IR
+4h=Instruction Register
+5=BP
+5h=Base Pointer
+6=SP
+6h=Stack Pointer
+7=ALU
+7h1=Arithmetic Logic Unit
+7h2=Arithmetic Logic Unit
+11=AX
+11h=AX Register (Acumulator)
+12=BX
+12h=BX Register (Base)
+13=CX
+13h=CX Register (Counter)
+15=Write your Comment here
+16=Min
+17=Max
+18h=Holds the address of the next Memory Position to execute
+19h=The instruction is decoded and interpreted here
+20h=Z=1 if the result of the last operation = 0.  If you are debugging your program, double click to change.
+21h=N=1 if the result of the last operation = negative number
+22h=C=1 if there is carry.
+23h=O=1 if there is overflow (all the bits don't fit in the result)
+24h=You can change this address within a program, use: “MOV BP,mem address “ that contains the address
+30=M
+31=e
+32=m
+33=o
+34=r
+35=y
+36=
+40=Address
+41= Value
+;Buttons
+b0=Op.
+b0h=View Instructions by Operation Code or not
+b01h=(AutoScroll) Follow memory access during access (Instructions)
+b02h=(AutoScroll) Follow memory access during access (Variables)
+b1=&Animation
+b1h=Disables the animation of the simulation for a faster execution.
+b2=&Run
+b2b=&Pause
+b2c=&Resume
+b3=O&k
+b3h=Load instruction in memory
+b4=&Delete
+b4h=Delete the last instruction loaded in memory
+b5=&Show
+;grupos
+g1=General Registers
+g2=Stack
+g3=Control Registers
+g4=Memory 'n Stack usage
+g4h1=Indicates the percentage of Simulated memory used
+g4h2=Indicates the percentage of reserved stack space used
+g5=Manually Enter Instructions
+g5h1=List of Instructions (OpCode - Instruction [ Parameters ])  
+g5h2=Manually write instructions from this Memory Address
+g5h3=The instruction parameters are written here.  Memory Address (in Hex) or register.
+g5h4=Anything written here for this instruction will display on the screen at run time
+g6=I/O Devices
+g6h1=Output device (Screen)
+g6h2=Input device (Keyboard) 
+g7=Simulation Control
+g7h1=Deactivate the animation for faster execution or if the program is very long and you have a slow graphics adapter
+g7h2=Simulation Speed
+g8h1=Processor registers 
+g9h1=Contents of the Memory 
+g9h2=Memory
+;Errores al introducir instr
+e1=Enter a register:  AX BX CX BP 
+e2=Enter a valid register:  AX BX CX BP
+e3=Enter a Register:  AX BX CX BP, or a memory address from 000 to 
+e4=Invalid register... enter a valid register:  AX BX CX  BP, or a memory address
+e5=Enter a destination and an origin, they can be registers or memory addresses
+e6=Invalid parameter, examples:  AX,CX or 1F,BX or 1,21  or CX,1A Separate with a comma 
+e7=No specific address or valid register  i.e.:  AX,BX or 2f,1A or BX,2F 
+e8=No address or valid destination register   i.e.:  CX,BX or 31F,1D or CX,2E
+e9=Invalid register of origin...  Enter a valid reg:  AX BX CX BP, or a memory address
+e10=Invalid destination register...  Enter a valid reg:  AX BX CX BP, or a memory address
+e11=Enter a register:  AX BX CX, or memory address from 000 to 
+e12=Invalid register... Enter a valid register:  AX BX CX,  or a memory address
+e13=Enter a destination and number of times, this can be a registry  or a memory address
+e14=Invalid parameter, examples:  AX,4 or 3B,14 or 111,2  separate with a comma.  
+e15=No specific number of times to conduct the operation.   i.e.:  AX,4 or 3B,14 or BX,7 
+e16=No. of times too big.  i.e.:  AX,4 or 3B,15 or  BX,7 
+e17=No memory address or invalid destination register   i.e.: CX,1 or 31F,14 or CX,22 
+e18=No. of times too big.  
+e19=Invalid no. of times.  i.e.:  AX,3 or 1C3,11 or BX,2
+e20=Enter a memory address in Hexadecimal, the range is from 000 to 
+e21=Invalid mem loc, Hex value from 000 to 
+e22=There is nothing to delete!  
+e23=Invalid hex. value, enter single values from 0-9 and A-F 
+e24=Enter a destination and input port number, destination must be a register
+e25=Invalid parameter, examples:  AX,12 or BX,1
+e26=No specific port. i.e: AX,4 or CX,14 or BX,9
+e27=Port too big. i.e: AX,4 or BX,1 or CX,2
+e28=No valid destination register i.e.:  Ejs: CX,1 or BX,14 or CX,12
+e29=INVALID port. i.e: AX,3 or CX,11 or BX,2
+e30=Enter an output port number, and a source register.
+e31=Invalid parameter, examples: 12,AX or 1,BX
+e32=No valid source register i.e.: Ejs: 1,CX or 14,BX or 12,CX
+e33=INVALID port. i.e: 3,AX or 11,CX or 2,BX
+e34=Port too big. i.e: 4,AX or 1,BX or 2,CX
+e35=No valid source register i.e.: 1,CX or 14,BX or 12,CX
+
+
+[instr]
+0=You must select an Instruction
+1=01 - LDA [ Mem Address ] 
+1i=Load the content of the memory address in AX
+2=02 - STA [ Mem Address ]
+2i=Store the contents of AX to the memory address
+3=03 - XAB
+3i=Exchanges the values of AX and BX
+4=04 - CLA
+4i=Makes AX = 0
+6=06 - PUSH register
+6i=Move the value of the specified  register to the stack
+7=07 - POP register
+7i=Takes the last value PUSHed on  the stack (indicated  by SP) and wites it to the specified register 
+8=08 - INC. [ mem ] or [ reg ].
+8i=Increments the specified destination: dest = dest + 1
+9=09 - DEC [mem] or [reg]
+9i=Decrements the specified destination, if the destination is now  = 0, it becomes Z = 1 
+10=10 - MOV dest,orig
+10i=Copies the value stored in the origin to the destiny.
+11=11 - AND dest,orig
+11i=Logical AND, performs a logical AND between both operands writing the result to the destination.
+12=12 - NOT dest
+12i=Logical NOT , Inverts the bits of the operand forming the complement of first.
+13=13 - OR  dest,orig
+13i=O inclusive OR, todo bit activo en cualquiera de los operandos sera activado en el destino.
+14=14 - XOR dest,orig
+14i=Exclusive OR, makes the logical OR an exclusive one between the operands and stores the result in destination.
+15=15 - ROL dest, times 
+15i=Rota los bits a la izq n veces, Bits que salen por la izq reentran por la Der. Carry F tiene el ultimo bit rotado.
+16=16 - ROR dest,times
+16i=Rota los bits a la der n veces, Bits que salen por la der reentran por la izq. CF guarda ult. bit rotado.
+17=17 - SHL dest,times
+17i=Desplaza los bits a la izq n veces, agregando ceros a la der, Carry Flag guarda ultimo bit desplazado.
+18=18 - SHR dest,times
+18i=Desplaza los bits a la Der n veces, agregando ceros a la izq, Carry Flag guarda ultimo bit desplazado.
+20=20 - ADD [ Mem address ] 
+20i=AX = AX  +  the content of the memory address 
+21=21 - SUB [Mem Address]
+21i=AX = AX - the content of the memory address
+22=22 - MUL [Mem Address]
+22i=BX, AX = AX * the content of the memory address 
+23=23 - DIV [Mem Address]
+23i=AX = BX, AX / the content of mem addr, BX=(BX, AX)% the content of mem addr. 
+25=24 - CLN
+25i=Clear the Negative Flag.  N = 0 
+25=25 - CLC
+25i=Clear the Carry Flag.  C = 0 
+26=26 - STC
+26i=Sets the Carry Flag.  C = 1 
+27=27 - CMC
+27i=Complement (Inverts) the Carry Flag. If C = 1 it returns C = 0 and vice versa
+29=29 - LOOP [Mem Address]
+29i=Decrements CX and goes to that memory address if CX is not zero.
+30=30 - JMP [Mem Address]
+30i=Unconditional Jump.  PC = memory address where the next instruction will be executed 
+31=31 - JEQ [Mem Address]
+31i=If Z = 1, PC = contents of the memory.
+32=32 - CMP [Mem Address]
+32i=Compares AX with [mem], if AX is greater, Z=0 N=0, if it is equal Z=1 N=0, if it is smaller Z=0 N=1 
+33=33 - JME [Mem Address]
+33i=If N = 1, PC = contents of the memory 
+34=34 - JMA [Mem Address]
+34i=If Z = 0 and N = 0, PC = contents of memory 
+35=35 - JC  [Mem Address]
+35i=If C = 1, PC = contents of memory 
+36=36 - JNC [Mem Address]
+36i=If C = 0, PC = contents of memory 
+37=37 - JO  [Mem Address]
+37i=if O = 1, PC = contents of memory 
+38=38 - JNO [Mem Address]
+38i=if O = 0, PC = contents of memory 
+39=39 - JNE [Dirección Mem]
+39i=Si Z = 0, PC = contents of memory 
+40=40 - LDT
+40i=Read a value from the Keyboard and take it to the AX register;  Write a comment.
+41=41 - EAP
+41i=Writes the content of the AX registry to the screen
+42=42 - MSG "message"
+42i=Write a comment to Screen
+50=50 - LDB [Mem Address]
+50i=Loads the content of [addr] in AX + BX (in binary).  i.e. Say BX = 10 then LDB 1F loads 21 in AX
+51=51 - STB [Mem Address]
+51i=Store the content of AX [addr] + BX (in binary).  i.e. Say BX = 101; STB 3A stores AX in 3F
+55=55 - LDF [Mem Address]
+55i=Loads the 32 bits number stored in [mem] and mem+1 in BX and AX, BX holds the more significant bits
+56=56 - STF [Mem Address]
+56i=Store the 32 bits number currently in BX and AX to [mem] and mem+1
+60=60 - ADDF [Mem Address]
+60i=Adds 2 32 bits numbers: BX and AX, store the operation result from these and [mem] y mem+1 contents
+61=61 - SUBF [Mem Address]
+61i=Substract: BX and AX = BX and AX - [mem] and mem+1 
+62=62 - MULF [Mem Address]
+62i=BX,AX = BX,AX * [mem],mem+1
+63=63 - DIVF [Mem Address]
+63i=BX,AX = BX,AX / [mem],mem+1,  CX = division module in 16 bit integer
+64=64 - ITOF
+64i=Converts the number loaded in AX (16Bits integer) to Float (32bits) in BX and AX
+65=65 - FTOI
+65i=Converts the number loaded in BX and AX (32Bits Float) to Integer (16bits) in AX
+80=80 - IN register,port
+80i=Input from port into a register
+81=81 - OUT port,regiser
+81i=Output from a register to port
+90=90 - NOP
+90i=This operation does not do anything.  Useful to patch code in memory
+99=99 - HLT
+99i=Finishes the Program
+
+
+[mens_main]
+;messageboxes
+v1t=New Program? 
+v1=Erase the Content of the Memory?  
+v2t=Load a Program from a File 
+v3t=File To load 
+v3=The file could not be opened.  
+v4=File from a Previous version, Seems to be Corrupt, \nUnexpected end of file
+v5t=Non Compatible Version
+v5=Try to open the file anyway?  
+v6=The file appears to be corrupt, \nUnexpected end of file.  
+v7=Version of file not recognized by the Simulator.  \nVisit the Webpage to download the latest version of SimuProc.
+v8=Is not valid SimuProc file type.
+v9t=File to save
+v9=The output file could not be opened.  
+v10t=Saves the Program in a File 
+v11=There is no program in memory to save.
+v12t=Warning 
+v12=You are using not small fonts \n\nWhich can cause the memory cells to display incorrectly.\n
+v13t=Change Resolution?
+v13=This program does not display well in a resolution of less than 800x600 \nDo you wish to change the resolution to 800x600?
+v14=Need to restart Windows 
+v15=Unsupported Mode
+v16t=Attention
+v16=There is no program in memory!  \n\nEnter one:\n-Instruction by instruction\n-Write one using the Internal Editor\n-or load one from a file.
+v17t=SimuProc message
+v17=The program in memory has changed \n\nDo you wish  to save it?  
+v18=Stop Simulation and open another program?  
+
+
+[statusbar]
+s1=Simulation is Halted.
+s2=Simulating. . . .
+s3=Error ....
+s4=There is no Program in Memory 
+s5=Error attempting Open:  
+s6=Imported a File of a Previous Version: 
+s7=Program File Succefully Loaded: 
+s8=Succefully Saved program in
+s9=The instruction was added:
+s10=(Program Loaded in Memory) 
+s11=MEMORY FULL
+s12=Last Instruction Deleted
+s13=Program running without Animation 
+
+
+[vtna_estadis]
+;Ventana Estadisticas
+tv=Simulation Statistics
+t1=Statistics 
+t2=The Program in Memory 
+t3=Statistics will show here later or during execution.  
+
+1=Executed instructions
+1h=Executed instructions or Cycles made during the simulation

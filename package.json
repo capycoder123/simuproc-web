@@ -1,0 +1,50 @@
+{
+  "name": "simuproc-web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Simulador de SimuProc 1.4.3.0 (procesador hipotético de 16 bits) para el navegador",
+  "license": "MIT",
+  "author": "Sebastian Bonilla",
+  "homepage": "https://simuproc-web.vercel.app",
+  "keywords": [
+    "simuproc",
+    "simulador",
+    "procesador",
+    "ensamblador",
+    "arquitectura-de-computadores",
+    "educacion",
+    "react",
+    "vite"
+  ],
+  "engines": {
+    "node": "^22.12.0 || ^24.0.0 || >=26.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "screenshots": "playwright test"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.2"
+  }
+}

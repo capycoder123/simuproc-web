@@ -1,0 +1,42 @@
+=====================================
+SimuProc - Simulador de un Procesador
+=====================================
+         Version 1.4.3.0 
+          (Feb 21-2004)
+_____________________________________
+
+Nota: Para saber que hay de nuevo en esta versión leer el archivo novedades.txt en el directorio de instalación.
+
+Recuerda visitar la página web, para asegurarte de que tienes la última versión.
+
+SimuProc es un Simulador de un Procesador Hipotético, con este simulador podrás aprender las nociones basicas para empezar a programar en lenguaje ensamblador. 
+
+Aprenderas algoritmos, pseudocodigos, trae conversor de bases, y mas..
+
+
+Este Simulador Hipotético muestra como funciona un procesador internamente.
+En el cual se puede ver que realiza este en cada Ciclo.
+
+Este simulador corre programas en ensamblador, soporta una variedad de instrucciones suficientes para escribir muchos programas.
+
+Para mas información leer la ayuda del programa en linea.
+
+
+Visite la Pagina WEB para Descargar mas programas que corran en el simulador.
+
+
+PAGINA WEB:
+__________________________
+http://simuproc.cjb.net
+o
+http://simuproc.tk/
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+vlaye@hotmail.com
+
+________________
+Vladimir Yepes B
+ Febrero 2004
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+SimuProc 2000-2004
+
+Este programa puede ser Distribuido Libremente.
