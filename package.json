@@ -6,6 +6,13 @@
   "license": "MIT",
   "author": "Sebastian Bonilla",
   "homepage": "https://simuproc-web.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capycoder123/simuproc-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/capycoder123/simuproc-web/issues"
+  },
   "keywords": [
     "simuproc",
     "simulador",
